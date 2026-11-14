@@ -1,0 +1,331 @@
+{
+ "instrument": "<LAB>/BHSLICE/rep5/rep5.py",
+ "instrument_sha256": "9b003febfedd1c5765f01f1ddff10a8b01c11f7550125b9adf9a6c787f02cb89",
+ "object": "Bowen-York spinning puncture, maximal conformally flat slice, mu = 1, J = j/4; slope s(j) = dM_ADM/dmu at fixed J; delta = M_ADM - 1",
+ "formulation": "s = a/(r+a), a = 1/2; Chebyshev(2s-1) x even Legendre(cos theta); residual bound = sum of |Chebyshev coefficients| of the exact polynomial residual, enclosed by an arb DCT on a Lobatto grid of size >= its degree; positivity by exact Bernstein (engine routine)",
+ "notes": {
+  "slope_upper": "rigorous: super-solution psi_N + e s of the tangent problem w.r.t. V_lo = 7 S Phi_+^-8 (Phi_+ from the certified point SUPER-solution) plus Z = s + (1-s) psi >= 0",
+  "slope_lower": "rigorous: sub-solution phi_N - e s w.r.t. V_hi = 7 S Phi_-^-8 plus Z >= 0",
+  "brief_object_upper": "the brief literal object: super-solution w.r.t. V_hi = 7 S Phi_-^-8. It bounds from above the slope of the problem with potential V_hi, which is <= the true slope; it is NOT an upper bound on s(j)"
+ },
+ "j64": {
+  "j": "64/1",
+  "degrees_main": {
+   "Nu": 160,
+   "Ku": 24,
+   "Nt": 160,
+   "Kt": 24
+  },
+  "delta_lo": "3.17060411682713773929617041116",
+  "delta_hi": "3.17060411682713773929617041186",
+  "delta_lo_exact": "607367083861077289432848666776644541756048766345864741/191561942608236107294793378393788647952342390272950272",
+  "delta_hi_exact": "607367083861077289432848666909848298790906183083288101/191561942608236107294793378393788647952342390272950272",
+  "slope_upper": "0.0520407975655210747020518836049",
+  "slope_lower": "0.0520407975655210747020518703815",
+  "slope_upper_exact": "77883095910415480028289286249906400605351115321557/1496577676626844588240573268701473812127674924007424",
+  "slope_lower_exact": "79752290212265451548968208855221688985268172311504091/1532495540865888858358347027150309183618739122183602176",
+  "brief_object_upper": "0.0520407975655210747020518835376",
+  "certified": true,
+  "positivity": {
+   "u": "PASS",
+   "Zp": "PASS",
+   "Zm": "PASS"
+  },
+  "e": {
+   "u": 3.47678028373498e-28,
+   "tplus": 6.578006062960548e-27,
+   "tminus": 6.578006062960548e-27
+  },
+  "stage_time_s": {
+   "ufit": 10.397733926773071,
+   "ucert": 5.9744062423706055,
+   "tfit+": 2.032061815261841,
+   "tcert+": 8.283133029937744,
+   "tfit-": 2.1266930103302,
+   "tcert-": 7.8197667598724365,
+   "knfit": 2.0745339393615723,
+   "kncert": 6.4836413860321045
+  },
+  "instrument_sha256_at_run": "9b003febfedd1c5765f01f1ddff10a8b01c11f7550125b9adf9a6c787f02cb89",
+  "KN_lambda6_slope_upper": "0.0712192164366958717014770166549",
+  "KN_certified": true,
+  "partner": {
+   "degrees": {
+    "Nu": 120,
+    "Ku": 20,
+    "Nt": 120,
+    "Kt": 20
+   },
+   "delta_lo": "3.17060411682713773929612960376",
+   "delta_hi": "3.17060411682713773929621121927",
+   "slope_upper": "0.0520407975655210747027235936474",
+   "slope_lower": "0.0520407975655210747013801603144",
+   "KN_lambda6_slope_upper": "0.0712192164366958717019988639985",
+   "instrument_sha256_at_run": "9b003febfedd1c5765f01f1ddff10a8b01c11f7550125b9adf9a6c787f02cb89"
+  },
+  "convergence": {
+   "delta_intervals_overlap": true,
+   "main_delta_inside_partner": true,
+   "slope_intervals_overlap": true,
+   "main_slope_inside_partner": true
+  },
+  "peak_memory": {
+   "main": "memcap: exit 0, peak 1.26 GB of 8.00 GB cap",
+   "partner": "memcap: exit 0, peak 0.74 GB of 8.00 GB cap"
+  }
+ },
+ "j4096": {
+  "j": "4096/1",
+  "degrees_main": {
+   "Nu": 340,
+   "Ku": 20,
+   "Nt": 340,
+   "Kt": 20
+  },
+  "delta_lo": "32.2150822519650947360600776016",
+  "delta_hi": "32.2150822519650947655917481627",
+  "delta_lo_exact": "49369469899764344711763849187867590691789194279551598595/1532495540865888858358347027150309183618739122183602176",
+  "delta_hi_exact": "49369469899764344757021002636928187230997561308107079683/1532495540865888858358347027150309183618739122183602176",
+  "slope_upper": "0.00131983286607990373316029655626",
+  "slope_lower": "0.00131983286607973853976366731638",
+  "slope_upper_exact": "2022637981955698328331257541684154663472659585075269/1532495540865888858358347027150309183618739122183602176",
+  "slope_lower_exact": "1011318990977722585093771370719040104680687318932043/766247770432944429179173513575154591809369561091801088",
+  "brief_object_upper": "0.00131983286607990368908184511072",
+  "certified": true,
+  "positivity": {
+   "u": "PASS",
+   "Zp": "PASS",
+   "Zm": "PASS"
+  },
+  "e": {
+   "u": 1.4765835280502497e-17,
+   "tplus": 8.257465908889716e-17,
+   "tminus": 8.257465908889716e-17
+  },
+  "stage_time_s": {
+   "ufit": 32.50486636161804,
+   "ucert": 20.1324942111969,
+   "tfit+": 7.473906993865967,
+   "tcert+": 27.426037788391113,
+   "tfit-": 7.255271911621094,
+   "tcert-": 31.33022379875183
+  },
+  "instrument_sha256_at_run": "9b003febfedd1c5765f01f1ddff10a8b01c11f7550125b9adf9a6c787f02cb89",
+  "partner": {
+   "degrees": {
+    "Nu": 300,
+    "Ku": 18,
+    "Nt": 300,
+    "Kt": 18
+   },
+   "delta_lo": "32.2150822519650914925991767626",
+   "delta_hi": "32.2150822519650980090526494197",
+   "slope_upper": "0.00131983286613525395503990435831",
+   "slope_lower": "0.00131983286602438831788400072503",
+   "KN_lambda6_slope_upper": null,
+   "instrument_sha256_at_run": "9b003febfedd1c5765f01f1ddff10a8b01c11f7550125b9adf9a6c787f02cb89"
+  },
+  "convergence": {
+   "delta_intervals_overlap": true,
+   "main_delta_inside_partner": true,
+   "slope_intervals_overlap": true,
+   "main_slope_inside_partner": true
+  },
+  "peak_memory": {
+   "main": "memcap: exit 0, peak 4.46 GB of 8.00 GB cap",
+   "partner": "memcap: exit 0, peak 3.37 GB of 8.00 GB cap"
+  }
+ },
+ "secant_j64": {
+  "j": "64/1",
+  "h": "1/1073741824",
+  "N": 120,
+  "K": 20,
+  "all_certified": true,
+  "secant_upper": "79752290278339696512316713379755399877351200396578743/1532495540865888858358347027150309183618739122183602176",
+  "secant_lower": "79752290146191206616536814262757324319740135493741085/1532495540865888858358347027150309183618739122183602176",
+  "secant_upper_dec": "0.05204079760863653128994858",
+  "secant_lower_dec": "0.05204079752240561813432952",
+  "nodes": {
+   "j": {
+    "j": "64/1",
+    "delta_lo_dec": "3.17060411682713773929612960376",
+    "delta_hi_dec": "3.17060411682713773929621121927",
+    "e_float": 4.08077503503236e-23
+   },
+   "jp": {
+    "j": "73786976294838206464/1152921506754330625",
+    "delta_lo_dec": "3.17060411299142674869688677182",
+    "delta_hi_dec": "3.17060411299142674869696838733",
+    "e_float": 4.080774994882031e-23
+   },
+   "jm": {
+    "j": "73786976294838206464/1152921502459363329",
+    "delta_lo_dec": "3.17060412066284873712008647797",
+    "delta_hi_dec": "3.17060412066284873712016809348",
+    "e_float": 4.0807750751826895e-23
+   }
+  },
+  "peak_memory": "memcap: exit 0, peak 0.58 GB of 8.00 GB cap",
+  "tangent_enclosure_inside_secant": true
+ },
+ "secant_j4096": {
+  "j": "4096/1",
+  "h": "1/16777216",
+  "N": 340,
+  "K": 20,
+  "all_certified": true,
+  "secant_upper": "63207463987162334533182170510919711678081241697837/47890485652059026823698344598447161988085597568237568",
+  "secant_lower": "505659279080449264333929345599473654872224728575299/383123885216472214589586756787577295904684780545900544",
+  "secant_upper_dec": "0.001319833430932115888786756",
+  "secant_lower_dec": "0.001319832301227427371698210",
+  "nodes": {
+   "j": {
+    "j": "4096/1",
+    "delta_lo_dec": "32.2150822519650947360600776016",
+    "delta_hi_dec": "32.2150822519650947655917481627",
+    "e_float": 1.4765835280502497e-17
+   },
+   "jp": {
+    "j": "1152921504606846976/281475010265089",
+    "delta_lo_dec": "32.2150802722707020945616851749",
+    "delta_hi_dec": "32.2150802722707021240933479486",
+    "e_float": 1.4765831386772484e-17
+   },
+   "jm": {
+    "j": "1152921504606846976/281474943156225",
+    "delta_lo_dec": "32.2150842316597233838069170935",
+    "delta_hi_dec": "32.2150842316597234133385954420",
+    "e_float": 1.4765839174233838e-17
+   }
+  },
+  "peak_memory": "memcap: exit 0, peak 3.60 GB of 8.00 GB cap",
+  "tangent_enclosure_inside_secant": true
+ },
+ "controls": {
+  "instrument_sha256": "9b003febfedd1c5765f01f1ddff10a8b01c11f7550125b9adf9a6c787f02cb89",
+  "C0 DCT exact recovery": {
+   "name": "C0 DCT exact recovery",
+   "ok": true,
+   "S": 381.8340770090127,
+   "S_exact": 381.8340770090127,
+   "aliasing_null_detected": true,
+   "time": 0.012852191925048828
+  },
+  "C1 operator algebra": {
+   "name": "C1 operator algebra",
+   "ok": true,
+   "Rop_vs_engine": true,
+   "Lh_s_eq_m2": true,
+   "laplacian_identity": true,
+   "derivative": true,
+   "time": 0.0009999275207519531
+  },
+  "T toy J=0": {
+   "name": "T toy J=0",
+   "ok": true,
+   "point_S": "0/1",
+   "tangent_fit_all_zero": true,
+   "slope_upper": "1/1",
+   "slope_lower": "1/1",
+   "note": "S == 0 exactly: an exact, non-strict certificate; psi = 0 solves Delta psi = V z_psi with V = 0",
+   "time": 0.041086673736572266
+  },
+  "C2 engine j=2 overlap": {
+   "name": "C2 engine j=2 overlap",
+   "ok": true,
+   "engine": [
+    "0.08468510403963333980631889",
+    "0.08468510403963334026032602"
+   ],
+   "mine": [
+    "0.0846851040396333398063188927148",
+    "0.0846851040396333402603260100475"
+   ],
+   "engine_eta_float": 5.675088966657409e-20,
+   "mine_e": 2.2700355866629626e-19,
+   "time": 1.9818527698516846
+  }
+ },
+ "K1T": {
+  "name": "K1T small-j series",
+  "rows": [
+   {
+    "j": "1/4",
+    "slope_lo_dec": "0.9953466586662603811810323",
+    "slope_hi_dec": "0.9953466586662603811810324",
+    "series2": "0.9953469386245265151515151",
+    "series3": "0.9953466562535003365009683",
+    "resid2_over_j6": [
+     -0.001146709058084743,
+     -0.001146709058084743
+    ],
+    "resid3_over_j8": [
+     0.00015812264228815266,
+     0.00015812264228815266
+    ],
+    "delta_lo_dec": "0.00155760570544021599044140525399",
+    "delta_hi_dec": "0.00155760570544021599044140525400",
+    "delta_resid3_over_j8": [
+     -1.0561079548248211e-05,
+     -1.0561079548248211e-05
+    ],
+    "certified": true
+   },
+   {
+    "j": "1/2",
+    "slope_lo_dec": "0.9817835480500189319327059",
+    "slope_hi_dec": "0.9817835480500189319327060",
+    "series2": "0.9818010179924242424242424",
+    "series3": "0.9817829462467488087892499",
+    "resid2_over_j6": [
+     -0.0011180763139398715,
+     -0.0011180763139398715
+    ],
+    "resid3_over_j8": [
+     0.00015406163715152472,
+     0.00015406163715152472
+    ],
+    "delta_lo_dec": "0.00617288561703564540159319993920",
+    "delta_hi_dec": "0.00617288561703564540159319997520",
+    "delta_resid3_over_j8": [
+     -1.0345695806081182e-05,
+     -1.0345695806081182e-05
+    ],
+    "certified": true
+   },
+   {
+    "j": "1",
+    "slope_lo_dec": "0.9327994339721661032993351",
+    "slope_hi_dec": "0.9327994339721661032995696",
+    "series2": "0.9338162878787878787878787",
+    "series3": "0.9326596961555601261483614",
+    "resid2_over_j6": [
+     -0.0010168539066217756,
+     -0.0010168539066217756
+    ],
+    "resid3_over_j8": [
+     0.00013973781660597714,
+     0.00013973781660597714
+    ],
+    "delta_lo_dec": "0.0238361051533259143533643201423",
+    "delta_hi_dec": "0.0238361051533259143533707133501",
+    "delta_resid3_over_j8": [
+     -9.569851816002553e-06,
+     -9.569851816002553e-06
+    ],
+    "certified": true
+   }
+  ],
+  "minus_11_c3": -0.0011565917232277526,
+  "note": "resid2/j^6 must tend to -11 c3 as j -> 0; resid3/j^8 must stay bounded (next term -15 c4)"
+ },
+ "peak_memory_controls": "memcap: exit 0, peak 0.24 GB of 8.00 GB cap",
+ "peak_memory_k1t": "memcap: exit 0, peak 0.18 GB of 8.00 GB cap",
+ "KN": {
+  "j": "64",
+  "lambda_": 6,
+  "slope_upper": "0.0712192164366958717014770166549",
+  "note": "exponent 7 -> 6 in the tangent operator only (point problem unchanged); rigorous upper bound of the modified problem slope; must differ from the true slope enclosure"
+ }
+}

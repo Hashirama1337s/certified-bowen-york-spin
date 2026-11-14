@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "Certified spin, mass and horizons of the Bowen-York spinning puncture family"
+authors:
+  - name: "Moki & Julio"
+version: "1.0"
+license: CC-BY-4.0
+keywords:
+  - Bowen-York initial data
+  - spinning black holes
+  - numerical relativity
+  - Lichnerowicz equation
+  - Hamiltonian constraint
+  - maximal spin
+  - extreme initial data
+  - computer-assisted proof
+  - interval arithmetic
+  - rigorous numerics
+abstract: >-
+  Conformally flat Bowen-York data for a single spinning puncture cannot describe a rapidly spinning black hole: the
+  spin ratio J/M_ADM^2 stays below about 0.93. We certify this with interval arithmetic for every spin and every
+  puncture mass mu > 0: a uniform ceiling J/M_ADM^2 <= 0.962234888831116 (P2c), then the supremum of the family in
+  [0.9282004538, 0.9282004687], so it rounds to 0.928200 (P2e), and, directly on the throat of the extreme (mu = 0)
+  data, chi(0) in [0.92820045875619, 0.92820045878266] (B3T). Every load-bearing certificate is blind-replicated by
+  an independent formulation. Every sealed test is listed, including one FAILED blind replication and its re-test.
+  Code, exact-rational results and reproduction scripts included.

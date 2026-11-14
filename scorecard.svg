@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="732" viewBox="0 0 900 732" font-family="Segoe UI, Helvetica, Arial, sans-serif" role="img" aria-label="Scorecard: 17 sealed tests (16 HOLD, 1 FAILED) + 1 unsealed probe">
+<title>Scorecard: 17 sealed tests (16 HOLD, 1 FAILED) + 1 unsealed probe</title>
+<rect width="900" height="732" rx="10" fill="#1c2026" stroke="#2f353d"/>
+<text x="20" y="34" font-size="18" font-weight="600" fill="#e8edf2">Scorecard: 17 sealed tests (16 HOLD, 1 FAILED) + 1 unsealed probe</text>
+<text x="20" y="54" font-size="12" fill="#9aa4ae">Sealed = prediction and pass bar hashed before the run. Failures are shown as failures. Details: SCORECARD.md.</text>
+<rect x="10" y="66" width="880" height="22" fill="#262b31"/>
+<text x="20" y="82" font-size="11.5" font-weight="600" fill="#39ff14" letter-spacing="0.5">CERTIFICATE RUNS (INTERVAL ARITHMETIC; EVERY SPIN IN THE RANGE)</text>
+<text x="20" y="110" font-size="12.5" font-family="Consolas, Menlo, monospace" fill="#e8edf2">P1 565736c4c4</text>
+<text x="170" y="110" font-size="12.5" fill="#e8edf2">Small spins J in [0, 1/4] (j in [0, 1])</text>
+<rect x="530.0" y="96" width="94" height="20" rx="10" fill="#12301c"/>
+<text x="540.0" y="110" font-size="11.5" font-weight="600" fill="#39ff14" textLength="74" lengthAdjust="spacingAndGlyphs">B1-B4 HOLD</text>
+<line x1="10" y1="119" x2="890" y2="119" stroke="#22272e"/>
+<text x="20" y="140" font-size="12.5" font-family="Consolas, Menlo, monospace" fill="#e8edf2">P2a d62bfc0e0b</text>
+<text x="170" y="140" font-size="12.5" fill="#e8edf2">Every j in [1, 10]</text>
+<rect x="530.0" y="126" width="94" height="20" rx="10" fill="#12301c"/>
+<text x="540.0" y="140" font-size="11.5" font-weight="600" fill="#39ff14" textLength="74" lengthAdjust="spacingAndGlyphs">B1-B5 HOLD</text>
+<line x1="10" y1="149" x2="890" y2="149" stroke="#22272e"/>
+<text x="20" y="170" font-size="12.5" font-family="Consolas, Menlo, monospace" fill="#e8edf2">P2b eba765ebe0</text>
+<text x="170" y="170" font-size="12.5" fill="#e8edf2">Every j in [10, 1000] (shared engine)</text>
+<rect x="530.0" y="156" width="94" height="20" rx="10" fill="#12301c"/>
+<text x="540.0" y="170" font-size="11.5" font-weight="600" fill="#39ff14" textLength="74" lengthAdjust="spacingAndGlyphs">B1-B5 HOLD</text>
+<line x1="10" y1="179" x2="890" y2="179" stroke="#22272e"/>
+<text x="20" y="200" font-size="12.5" font-family="Consolas, Menlo, monospace" fill="#e8edf2">P2c 3031217ac8</text>
+<text x="170" y="200" font-size="12.5" fill="#e8edf2">Uniform ceiling J/M^2 &lt;= c &lt; 1, c &lt;= 0.98</text>
+<rect x="530.0" y="186" width="94" height="20" rx="10" fill="#12301c"/>
+<text x="540.0" y="200" font-size="11.5" font-weight="600" fill="#39ff14" textLength="74" lengthAdjust="spacingAndGlyphs">C1-C5 HOLD</text>
+<line x1="10" y1="209" x2="890" y2="209" stroke="#22272e"/>
+<text x="20" y="230" font-size="12.5" font-family="Consolas, Menlo, monospace" fill="#e8edf2">P2d 9677804a51</text>
+<text x="170" y="230" font-size="12.5" fill="#e8edf2">Sharp ceiling via the tangent lemma</text>
+<rect x="530.0" y="216" width="94" height="20" rx="10" fill="#12301c"/>
+<text x="540.0" y="230" font-size="11.5" font-weight="600" fill="#39ff14" textLength="74" lengthAdjust="spacingAndGlyphs">D1-D5 HOLD</text>
+<line x1="10" y1="239" x2="890" y2="239" stroke="#22272e"/>
+<text x="20" y="260" font-size="12.5" font-family="Consolas, Menlo, monospace" fill="#e8edf2">P2e 560847f6a4</text>
+<text x="170" y="260" font-size="12.5" fill="#e8edf2">Decide the sixth digit (rounds to 0.928200)</text>
+<rect x="530.0" y="246" width="94" height="20" rx="10" fill="#12301c"/>
+<text x="540.0" y="260" font-size="11.5" font-weight="600" fill="#39ff14" textLength="74" lengthAdjust="spacingAndGlyphs">E1-E4 HOLD</text>
+<line x1="10" y1="269" x2="890" y2="269" stroke="#22272e"/>
+<text x="20" y="290" font-size="12.5" font-family="Consolas, Menlo, monospace" fill="#e8edf2">B3T 10a65e940a</text>
+<text x="170" y="290" font-size="12.5" fill="#e8edf2">Spin of the extreme (mu = 0) data, on the throat</text>
+<rect x="530.0" y="276" width="94" height="20" rx="10" fill="#12301c"/>
+<text x="540.0" y="290" font-size="11.5" font-weight="600" fill="#39ff14" textLength="74" lengthAdjust="spacingAndGlyphs">T1-T4 HOLD</text>
+<line x1="10" y1="299" x2="890" y2="299" stroke="#22272e"/>
+<rect x="10" y="306" width="880" height="22" fill="#262b31"/>
+<text x="20" y="322" font-size="11.5" font-weight="600" fill="#39ff14" letter-spacing="0.5">BLIND REPLICATIONS (INDEPENDENT SEATS, OWN FORMULATIONS)</text>
+<text x="20" y="350" font-size="12.5" font-family="Consolas, Menlo, monospace" fill="#e8edf2">REP1 e44dd02296</text>
+<text x="170" y="350" font-size="12.5" fill="#e8edf2">Blind delta(0.0625), delta(0.25) vs P1</text>
+<rect x="530.0" y="336" width="94" height="20" rx="10" fill="#12301c"/>
+<text x="540.0" y="350" font-size="11.5" font-weight="600" fill="#39ff14" textLength="74" lengthAdjust="spacingAndGlyphs">Q1 Q2 HOLD</text>
+<rect x="630.0" y="336" width="94" height="20" rx="10" fill="#12301c"/>
+<text x="640.0" y="350" font-size="11.5" font-weight="600" fill="#39ff14" textLength="74" lengthAdjust="spacingAndGlyphs">K1 K2 PASS</text>
+<line x1="10" y1="359" x2="890" y2="359" stroke="#22272e"/>
+<text x="20" y="380" font-size="12.5" font-family="Consolas, Menlo, monospace" fill="#e8edf2">REP2 227cbcafc2</text>
+<text x="170" y="380" font-size="12.5" fill="#e8edf2">Blind delta(6), delta(10) vs P2a</text>
+<rect x="530.0" y="366" width="94" height="20" rx="10" fill="#12301c"/>
+<text x="540.0" y="380" font-size="11.5" font-weight="600" fill="#39ff14" textLength="74" lengthAdjust="spacingAndGlyphs">Q1 Q2 HOLD</text>
+<rect x="630.0" y="366" width="94" height="20" rx="10" fill="#12301c"/>
+<text x="640.0" y="380" font-size="11.5" font-weight="600" fill="#39ff14" textLength="74" lengthAdjust="spacingAndGlyphs">K1 K2 PASS</text>
+<line x1="10" y1="389" x2="890" y2="389" stroke="#22272e"/>
+<text x="20" y="410" font-size="12.5" font-family="Consolas, Menlo, monospace" fill="#e8edf2">REP3 a669f700df</text>
+<text x="170" y="410" font-size="12.5" fill="#e8edf2">Blind delta(300), delta(1000) vs P2b</text>
+<rect x="530.0" y="396" width="94" height="20" rx="10" fill="#12301c"/>
+<text x="540.0" y="410" font-size="11.5" font-weight="600" fill="#39ff14" textLength="74" lengthAdjust="spacingAndGlyphs">Q1 Q2 HOLD</text>
+<rect x="630.0" y="396" width="94" height="20" rx="10" fill="#12301c"/>
+<text x="640.0" y="410" font-size="11.5" font-weight="600" fill="#39ff14" textLength="74" lengthAdjust="spacingAndGlyphs">K1 K2 PASS</text>
+<line x1="10" y1="419" x2="890" y2="419" stroke="#22272e"/>
+<text x="20" y="440" font-size="12.5" font-family="Consolas, Menlo, monospace" fill="#e8edf2">REP4 ad62cca292</text>
+<text x="170" y="440" font-size="12.5" fill="#e8edf2">Blind delta(3000), delta(10000) vs P2c</text>
+<rect x="530.0" y="426" width="94" height="20" rx="10" fill="#12301c"/>
+<text x="540.0" y="440" font-size="11.5" font-weight="600" fill="#39ff14" textLength="74" lengthAdjust="spacingAndGlyphs">REPLICATED</text>
+<line x1="10" y1="449" x2="890" y2="449" stroke="#22272e"/>
+<text x="20" y="470" font-size="12.5" font-family="Consolas, Menlo, monospace" fill="#e8edf2">REP5 9e0df55e7a</text>
+<text x="170" y="470" font-size="12.5" fill="#e8edf2">Blind tangent (slope) bounds vs P2d</text>
+<rect x="530.0" y="456" width="94" height="20" rx="10" fill="#12301c"/>
+<text x="540.0" y="470" font-size="11.5" font-weight="600" fill="#39ff14" textLength="74" lengthAdjust="spacingAndGlyphs">REPLICATED</text>
+<line x1="10" y1="479" x2="890" y2="479" stroke="#22272e"/>
+<text x="20" y="500" font-size="12.5" font-family="Consolas, Menlo, monospace" fill="#e8edf2">REP6 0405395ed8</text>
+<text x="170" y="500" font-size="12.5" fill="#e8edf2">Blind top node 2^21 and tail vs P2e</text>
+<rect x="530.0" y="486" width="72" height="20" rx="10" fill="#12301c"/>
+<text x="540.0" y="500" font-size="11.5" font-weight="600" fill="#39ff14" textLength="52" lengthAdjust="spacingAndGlyphs">R1 HOLD</text>
+<rect x="608.0" y="486" width="109" height="20" rx="10" fill="#3a1a1a"/>
+<text x="618.0" y="500" font-size="11.5" font-weight="600" fill="#ff6b6b" textLength="89" lengthAdjust="spacingAndGlyphs">R2 R3 FAILED</text>
+<line x1="10" y1="509" x2="890" y2="509" stroke="#22272e"/>
+<text x="20" y="530" font-size="12.5" font-family="Consolas, Menlo, monospace" fill="#e8edf2">REP6b 3e929bb723</text>
+<text x="170" y="530" font-size="12.5" fill="#e8edf2">Tighter blind tangent at 2^21 (re-test)</text>
+<rect x="530.0" y="516" width="94" height="20" rx="10" fill="#12301c"/>
+<text x="540.0" y="530" font-size="11.5" font-weight="600" fill="#39ff14" textLength="74" lengthAdjust="spacingAndGlyphs">REPLICATED</text>
+<line x1="10" y1="539" x2="890" y2="539" stroke="#22272e"/>
+<text x="20" y="560" font-size="12.5" font-family="Consolas, Menlo, monospace" fill="#e8edf2">REP7 133b99d241</text>
+<text x="170" y="560" font-size="12.5" fill="#e8edf2">Blind extreme-data spin vs B3T</text>
+<rect x="530.0" y="546" width="94" height="20" rx="10" fill="#12301c"/>
+<text x="540.0" y="560" font-size="11.5" font-weight="600" fill="#39ff14" textLength="74" lengthAdjust="spacingAndGlyphs">REPLICATED</text>
+<line x1="10" y1="569" x2="890" y2="569" stroke="#22272e"/>
+<rect x="10" y="576" width="880" height="22" fill="#262b31"/>
+<text x="20" y="592" font-size="11.5" font-weight="600" fill="#39ff14" letter-spacing="0.5">TESTS ON THE CERTIFIED DATA</text>
+<text x="20" y="620" font-size="12.5" font-family="Consolas, Menlo, monospace" fill="#e8edf2">B2V a580a8ad0f</text>
+<text x="170" y="620" font-size="12.5" fill="#e8edf2">Monotone, convex, tangent-free tail, exponent</text>
+<rect x="530.0" y="606" width="94" height="20" rx="10" fill="#12301c"/>
+<text x="540.0" y="620" font-size="11.5" font-weight="600" fill="#39ff14" textLength="74" lengthAdjust="spacingAndGlyphs">V1-V4 HOLD</text>
+<line x1="10" y1="629" x2="890" y2="629" stroke="#22272e"/>
+<text x="20" y="650" font-size="12.5" font-family="Consolas, Menlo, monospace" fill="#e8edf2">FLUXT 0ce319a05a</text>
+<text x="170" y="650" font-size="12.5" fill="#e8edf2">Throat flux identity, slice by slice</text>
+<rect x="530.0" y="636" width="94" height="20" rx="10" fill="#12301c"/>
+<text x="540.0" y="650" font-size="11.5" font-weight="600" fill="#39ff14" textLength="74" lengthAdjust="spacingAndGlyphs">F1 F2 HOLD</text>
+<rect x="630.0" y="636" width="72" height="20" rx="10" fill="#12301c"/>
+<text x="640.0" y="650" font-size="11.5" font-weight="600" fill="#39ff14" textLength="52" lengthAdjust="spacingAndGlyphs">F3 PASS</text>
+<line x1="10" y1="659" x2="890" y2="659" stroke="#22272e"/>
+<rect x="10" y="666" width="880" height="22" fill="#262b31"/>
+<text x="20" y="682" font-size="11.5" font-weight="600" fill="#39ff14" letter-spacing="0.5">PRE-STATED BUT UNSEALED PROBE (NOT COUNTED ABOVE)</text>
+<text x="20" y="710" font-size="12.5" font-family="Consolas, Menlo, monospace" fill="#e8edf2">B4x P-1 unsealed</text>
+<text x="170" y="710" font-size="12.5" fill="#e8edf2">Monotone throat profile (double precision)</text>
+<rect x="530.0" y="696" width="87" height="20" rx="10" fill="#3a1a1a"/>
+<text x="540.0" y="710" font-size="11.5" font-weight="600" fill="#ff6b6b" textLength="67" lengthAdjust="spacingAndGlyphs">P1 FAILED</text>
+<rect x="623.0" y="696" width="87" height="20" rx="10" fill="#3a1a1a"/>
+<text x="633.0" y="710" font-size="11.5" font-weight="600" fill="#ff6b6b" textLength="67" lengthAdjust="spacingAndGlyphs">P2 FAILED</text>
+<rect x="716.0" y="696" width="168" height="20" rx="10" fill="#33290f"/>
+<text x="726.0" y="710" font-size="11.5" font-weight="600" fill="#ffc94d" textLength="148" lengthAdjust="spacingAndGlyphs">pre-stated, unsealed</text>
+<line x1="10" y1="719" x2="890" y2="719" stroke="#22272e"/>
+</svg>

@@ -1,0 +1,45 @@
+{
+ "instrument_sha256": "9b003febfedd1c5765f01f1ddff10a8b01c11f7550125b9adf9a6c787f02cb89",
+ "C0 DCT exact recovery": {
+  "name": "C0 DCT exact recovery",
+  "ok": true,
+  "S": 381.8340770090127,
+  "S_exact": 381.8340770090127,
+  "aliasing_null_detected": true,
+  "time": 0.012852191925048828
+ },
+ "C1 operator algebra": {
+  "name": "C1 operator algebra",
+  "ok": true,
+  "Rop_vs_engine": true,
+  "Lh_s_eq_m2": true,
+  "laplacian_identity": true,
+  "derivative": true,
+  "time": 0.0009999275207519531
+ },
+ "T toy J=0": {
+  "name": "T toy J=0",
+  "ok": true,
+  "point_S": "0/1",
+  "tangent_fit_all_zero": true,
+  "slope_upper": "1/1",
+  "slope_lower": "1/1",
+  "note": "S == 0 exactly: an exact, non-strict certificate; psi = 0 solves Delta psi = V z_psi with V = 0",
+  "time": 0.041086673736572266
+ },
+ "C2 engine j=2 overlap": {
+  "name": "C2 engine j=2 overlap",
+  "ok": true,
+  "engine": [
+   "0.08468510403963333980631889",
+   "0.08468510403963334026032602"
+  ],
+  "mine": [
+   "0.0846851040396333398063188927148",
+   "0.0846851040396333402603260100475"
+  ],
+  "engine_eta_float": 5.675088966657409e-20,
+  "mine_e": 2.2700355866629626e-19,
+  "time": 1.9818527698516846
+ }
+}

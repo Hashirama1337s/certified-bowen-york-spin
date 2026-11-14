@@ -1,0 +1,36 @@
+{
+  "upload_type": "software",
+  "title": "Certified spin, mass and horizons of the Bowen-York spinning puncture family",
+  "creators": [
+    {
+      "name": "Moki & Julio"
+    }
+  ],
+  "description": "<p><strong>In plain words.</strong> The Bowen-York construction is a common way to set up a spinning black hole on a computer. Numerical work pointed to a ceiling on its spin ratio J/M^2 near 0.928. We proved where the ceiling is, with interval arithmetic that carries a guaranteed error bar on every number, and proved several facts about the family by hand.</p><p><strong>Results (computer-assisted where stated).</strong> For the single, non-boosted, conformally flat, maximal Bowen-York spinning puncture with bare mass mu &gt; 0: two-sided certified ADM mass enclosures for every spin parameter up to j = 11994.8 and a one-sided bound beyond; the supremum of J/M_ADM^2 over the family lies in [0.9282004538, 0.9282004687], so it rounds to 0.928200 (decision blind-replicated). At fixed J &ne; 0 the mass M(mu) is strictly increasing (a corollary of Dain and Gabach Clement's Lemmas 3.1-3.2, which we record), strictly convex and C^1; the supremum is not attained and equals the spin of the extreme (mu = 0) data, certified directly on the throat: chi(0) in [0.92820045875619, 0.92820045878266] (blind-replicated). A mass formula for the extreme data from its throat profile alone, M_0 = (2/3) Sum (2l+1) a_l^2, a Lichnerowicz analogue of the radial Pohozaev invariant of Korevaar, Mazzeo, Pacard and Schoen. For mu &gt; 0 the throat is the only closed connected MOTS and minimal surface. The extreme data contain no closed minimal surface, MOTS or apparent horizon, answering a question Dain and Gabach Clement left open; two independent proofs (the sliding method of Berestycki and Nirenberg is credited).</p><p><strong>Checks.</strong> 17 sealed tests (16 HOLD, 1 FAILED and re-tested), blind independent replications, internal hostile referee reports (internal lab checks, not external peer review), and a clean-room reproduction from the repository. Limitations are listed in Section 11 of the paper.</p><p>Prepared with AI assistance; what was checked, and by what, is stated above.</p>",
+  "access_right": "open",
+  "license": "cc-by-4.0",
+  "version": "1.0",
+  "language": "eng",
+  "keywords": [
+    "Bowen-York initial data",
+    "spinning black holes",
+    "maximal spin",
+    "extreme initial data",
+    "Lichnerowicz equation",
+    "Hamiltonian constraint",
+    "apparent horizon",
+    "computer-assisted proof",
+    "interval arithmetic",
+    "rigorous numerics",
+    "general relativity"
+  ],
+  "related_identifiers": [
+    {"relation": "references", "identifier": "arXiv:0806.2180", "scheme": "arxiv"},
+    {"relation": "references", "identifier": "arXiv:0911.0258", "scheme": "arxiv"},
+    {"relation": "references", "identifier": "arXiv:1001.0178", "scheme": "arxiv"},
+    {"relation": "references", "identifier": "arXiv:0805.4192", "scheme": "arxiv"},
+    {"relation": "references", "identifier": "arXiv:0908.1063", "scheme": "arxiv"},
+    {"relation": "references", "identifier": "arXiv:math/9807038", "scheme": "arxiv"},
+    {"relation": "isSupplementedBy", "identifier": "https://github.com/Hashirama1337s/certified-bowen-york-spin", "scheme": "url"}
+  ]
+}

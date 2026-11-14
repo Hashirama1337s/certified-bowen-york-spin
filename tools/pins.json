@@ -1,0 +1,341 @@
+{
+ "note": "Pinned sha256 of every sealed file in this repository: instruments as recorded by the lab ledger before their certified runs, engine modules as recorded by the runs, result files as pinned inside later instruments, BAR / AMEND / TARGETS files as sealed in the ledger, and controls files as read at each GO. For path-patched files (PATCHES.md) the pin is the sha256 of the restored original. tools/check_pins.py verifies them.",
+ "pins": [
+  {
+   "path": "code/p1.py",
+   "sha256": "23c6cbfdae63d819bbb75a5da75bece0d1c6e65c77ca36846448652626fa810f",
+   "source": "lab ledger pin row (instrument as run)",
+   "seal": "565736c4c4"
+  },
+  {
+   "path": "code/p2a.py",
+   "sha256": "feee7d6f273fbfe97581dca0d224c0e387b6cdf31f9f10ae6f949543de2dbf04",
+   "source": "lab ledger pin row (instrument as run)",
+   "seal": "d62bfc0e0b"
+  },
+  {
+   "path": "code/p2b.py",
+   "sha256": "124ce51a261935c5cdc80f9956712d3700cefd0d1177712d09d944a05afa7f2d",
+   "source": "lab ledger pin row (instrument as run)",
+   "seal": "eba765ebe0"
+  },
+  {
+   "path": "code/p2c.py",
+   "sha256": "9d2452bd865bffbe1742454e1e19dab2882d10ffdc7dbd83d5e0ade985fd311b",
+   "source": "lab ledger pin row (instrument as run)",
+   "seal": "3031217ac8"
+  },
+  {
+   "path": "code/p2d.py",
+   "sha256": "f1fae7330e2472ac4f5e558ad40c88ea03ac15d052181c2952ef307ec1e75a1b",
+   "source": "lab ledger pin row (instrument as run)",
+   "seal": "9677804a51"
+  },
+  {
+   "path": "code/p2e.py",
+   "sha256": "a25e6cc4fc687bfb93e3a354a4010e4e6bd71de8de6aaeac57229ac7b4873555",
+   "source": "lab ledger pin row (instrument as run)",
+   "seal": "560847f6a4"
+  },
+  {
+   "path": "code/b3t.py",
+   "sha256": "0043585b666fd0f5b0afd2ab4f16dc98335600834943c6a8bd7fdee13aed679a",
+   "source": "lab ledger pin row (instrument as run)",
+   "seal": "10a65e940a"
+  },
+  {
+   "path": "code/fluxt.py",
+   "sha256": "957929cc1d4f3111f1f3d4ec33ffb0df7bed5e94f8465a9aca03871a10fa0c27",
+   "source": "lab ledger pin row (instrument as run)",
+   "seal": "0ce319a05a"
+  },
+  {
+   "path": "code/scout/b2_verdict.py",
+   "sha256": "2be6e953320cf84565f306fff8965b1591d041b9f94edba7d771433309824c70",
+   "source": "lab ledger pin row (instrument as run)",
+   "seal": "a580a8ad0f"
+  },
+  {
+   "path": "code/rep/rep1/rep1.py",
+   "sha256": "497800e6d7ec7ea12baa3e7029661c40aa2d6d7b98f5f4319811b64636f89830",
+   "source": "lab ledger pin row (instrument as run)",
+   "seal": "e44dd02296"
+  },
+  {
+   "path": "code/rep/rep2/rep2.py",
+   "sha256": "447dff2b21221cc3d224fba155f44c92af4b8c1ddcfb7b4113d95edf8b778346",
+   "source": "lab ledger pin row (instrument as run)",
+   "seal": "227cbcafc2"
+  },
+  {
+   "path": "code/rep/rep3/rep3.py",
+   "sha256": "1cc44624cccb51c0d66d797d425b61e6d1fb9f32bdb6a5efa6b82c159b28089a",
+   "source": "lab ledger pin row (instrument as run)",
+   "seal": "a669f700df"
+  },
+  {
+   "path": "code/rep/rep4/rep4.py",
+   "sha256": "eb4f8cc460b417ef0ec4789002b38ae385dbcfaf54c5f7f5e0f526bc54b1d10a",
+   "source": "lab ledger pin row (instrument as run)",
+   "seal": "ad62cca292"
+  },
+  {
+   "path": "code/rep/rep5/rep5.py",
+   "sha256": "9b003febfedd1c5765f01f1ddff10a8b01c11f7550125b9adf9a6c787f02cb89",
+   "source": "lab ledger pin row (instrument as run)",
+   "seal": "9e0df55e7a"
+  },
+  {
+   "path": "code/rep/rep6/rep6.py",
+   "sha256": "27d03c79c16e075b2cfe01090470e89ae0588efe6d019d1627055ab0c16e2b0e",
+   "source": "lab ledger pin row (instrument as run)",
+   "seal": "0405395ed8"
+  },
+  {
+   "path": "code/rep/rep6/rep6b.py",
+   "sha256": "2460ff7e8226ac2a1cd6948986edea56b8072e7a047a460a57ef465b75285f7a",
+   "source": "lab ledger pin row (instrument as run)",
+   "seal": "3e929bb723"
+  },
+  {
+   "path": "code/rep/rep7/rep7.py",
+   "sha256": "c473c57be1f92f963af66b4d27e236d1c3f86d9541d324c1b36af41eaa019c32",
+   "source": "lab ledger pin row (instrument as run)",
+   "seal": "133b99d241"
+  },
+  {
+   "path": "code/gravity_engine/lichnerowicz_axisym.py",
+   "sha256": "3659ae21df8534a74ede3af11a1d7fbae670b7478d67c0bb2bd5b34710d79f52",
+   "source": "engine_sha256 recorded in results/p2c/ceiling_p2c.json and every P2c main invocation (engine module version 2)",
+   "seal": "3031217ac8"
+  },
+  {
+   "path": "code/gravity_engine/bowen_york_sqrt.py",
+   "sha256": "6f3a40993bf6ca4b082ee7699913fd49dec3beecf15365dfa12e730ccc7bc9b3",
+   "source": "ENGINE_SHA256 constant in code/p2e.py; engine sha256 recorded in results/p2d/result_p2d.json and results/p2e/result_p2e.json",
+   "seal": "560847f6a4"
+  },
+  {
+   "path": "results/p1/result_p1.json",
+   "sha256": "927a72d7f44aa3cbef1454565cb2a37e3bd22970ca8a9538c7d943c4c2ee77f0",
+   "source": "PIN_SHA256 in code/p2c.py and code/p2d.py",
+   "seal": "3031217ac8"
+  },
+  {
+   "path": "results/p2a/result_p2a.json",
+   "sha256": "6fcc3a94833ef9205fe3bca87d64f1ee92a7225b22f643c59370548cbdcacd80",
+   "source": "PIN_SHA256 in code/p2c.py and code/p2d.py",
+   "seal": "3031217ac8"
+  },
+  {
+   "path": "results/p2b/result_p2b.json",
+   "sha256": "9f4fa988dfb66bb6978f7e41fe6b26d32c0c152b908061ffe91076bc154776a3",
+   "source": "PIN_SHA256 in code/p2c.py and code/p2d.py",
+   "seal": "3031217ac8"
+  },
+  {
+   "path": "results/p2c/result_p2c.json",
+   "sha256": "4b2dbf7b95742ce309a361fa693074779fb4f895f1f8afaecff5d874e60c33e7",
+   "source": "PIN_SHA256 in code/p2d.py and code/p2e.py",
+   "seal": "9677804a51"
+  },
+  {
+   "path": "results/p2c/ceiling_p2c.json",
+   "sha256": "a63509850d6b3ad2f26d0b66463f262446b8f48a67e143941d9b81e836ac9b8c",
+   "source": "PIN_SHA256 in code/p2d.py",
+   "seal": "9677804a51"
+  },
+  {
+   "path": "results/p2d/result_p2d.json",
+   "sha256": "5620dd7a941afceb7d843a485eb11f5c94127eab06e522441eeebf1b6ab1b639",
+   "source": "PIN_SHA256 in code/p2e.py",
+   "seal": "560847f6a4"
+  },
+  {
+   "path": "results/p2e/result_p2e.json",
+   "sha256": "2aa80d5fbda95e76a2e2f96c20244f95f647a8f4f674be7618825e0a1dbc8dde",
+   "source": "data file named by sha in results/b2v/BAR-B2V.md (prefix 2aa80d5f)",
+   "seal": "a580a8ad0f"
+  },
+  {
+   "path": "results/b2v/BAR-B2V.md",
+   "sha256": "5f8ea128346b0f3855449b90df85d3702e1bda9aac1a65432b48c24a865d76d7",
+   "source": "lab ledger seal-file row (sealed before the run)",
+   "seal": "1b6f7e924c"
+  },
+  {
+   "path": "results/b3t/BAR-B3T.md",
+   "sha256": "41ff1b0b0243a1a2eb7031674c1506b844f3a99dd18ec21be854e1f70741d95d",
+   "source": "lab ledger seal-file row (sealed before the run)",
+   "seal": "f36e40b1bd"
+  },
+  {
+   "path": "results/b3t/controls_b3t.json",
+   "sha256": "cab8efe8e828ce9c4c7b2b5f832ca7627d97cc21df1b76c1da0474abe6ff683a",
+   "source": "lab ledger GO row (controls read before the main run)",
+   "seal": "10a65e940a"
+  },
+  {
+   "path": "results/fluxt/BAR-FLUXT.md",
+   "sha256": "e1cca5b6c483304ad76739938ffcaf348b1f2f8d296fb5dae3b51a6c22819d9c",
+   "source": "lab ledger seal-file row (sealed before the run)",
+   "seal": "b04ad57b36"
+  },
+  {
+   "path": "results/fluxt/rn_control.json",
+   "sha256": "d6c2c1202bebc6530d104e33f1a065c8f5e7ff5f3876c21880579d8f3d88889e",
+   "source": "lab ledger GO row (controls read before the main run)",
+   "seal": "0ce319a05a"
+  },
+  {
+   "path": "results/p1/BAR-P1.md",
+   "sha256": "abf368ea987b3c4882acdcd34c87d363e475b15ce390dd076569fa46d21750c3",
+   "source": "lab ledger seal-file row (sealed before the run)",
+   "seal": "e1c57f6005"
+  },
+  {
+   "path": "results/p2a/AMEND-P2a-1.md",
+   "sha256": "3cc0ea8e0fe81cef373d4d6c0871c38089d5c6c4bdab941e579174f1e3e35dda",
+   "source": "lab ledger seal-file row (sealed before the run)",
+   "seal": "9356a34707"
+  },
+  {
+   "path": "results/p2a/BAR-P2a.md",
+   "sha256": "58712069a3aecfab6f9ade506c33489e2d99ff6654075231425fa4ef932c3bac",
+   "source": "lab ledger seal-file row (sealed before the run)",
+   "seal": "de758dbbf3"
+  },
+  {
+   "path": "results/p2a/controls_p2a.json",
+   "sha256": "481e7a8c2667318b4adfd9e87e6c93a722906c848dadaae6df312e76d66e3a49",
+   "source": "lab ledger GO row (controls read before the main run)",
+   "seal": "d62bfc0e0b"
+  },
+  {
+   "path": "results/p2a/TARGETS-P2.md",
+   "sha256": "e42e8b1e0adf37e9e1ae8dd9d3a2362a2b349584072877326ad24edd6233cbce",
+   "source": "lab ledger seal-file row (sealed before the run)",
+   "seal": "b18e905ff1"
+  },
+  {
+   "path": "results/p2b/BAR-P2b.md",
+   "sha256": "98168bd4f72ea46bcb09243a018ada73d69f213b4b97ffb92315aff8892f3bad",
+   "source": "lab ledger seal-file row (sealed before the run)",
+   "seal": "d5e41fe748"
+  },
+  {
+   "path": "results/p2b/controls_p2b.json",
+   "sha256": "2508deae71c159b07c6b48d43ff72ecccdef7baf4796d1a045ea9685cf85fe35",
+   "source": "lab ledger GO row (controls read before the main run)",
+   "seal": "eba765ebe0"
+  },
+  {
+   "path": "results/p2c/BAR-P2c.md",
+   "sha256": "18a005766fdf8b42eaa4cebaba807cfb7ddbe78018de3844a50878c7d3341088",
+   "source": "lab ledger seal-file row (sealed before the run)",
+   "seal": "e2da2198e4"
+  },
+  {
+   "path": "results/p2c/controls_p2c.json",
+   "sha256": "a87d42f1d60b9c62fca504ffe86d54913d64f9e48fa8095ccaa72797bde29518",
+   "source": "lab ledger GO row (controls read before the main run)",
+   "seal": "3031217ac8"
+  },
+  {
+   "path": "results/p2d/AMEND-P2d-1.md",
+   "sha256": "e295ebf5abccee997b03bbf5efa9c79fa04868675265c6e403a1cb832aeee7c5",
+   "source": "lab ledger seal-file row (sealed before the run)",
+   "seal": "ea950c756f"
+  },
+  {
+   "path": "results/p2d/AMEND-P2d-2.md",
+   "sha256": "0f17bbd0c393fb323d4adfa2f111469ad1a23685381b5e3cbbbb330818b8b34c",
+   "source": "lab ledger seal-file row (sealed before the run)",
+   "seal": "5426f4d8ed"
+  },
+  {
+   "path": "results/p2d/AMEND-P2d-3.md",
+   "sha256": "3afd48931b58d95a28b73c140be06efc65235c370eaa1133f9714ab68e3b3850",
+   "source": "lab ledger seal-file row (sealed before the run)",
+   "seal": "0121244f0d"
+  },
+  {
+   "path": "results/p2d/BAR-P2d.md",
+   "sha256": "4d6e5ac99703f8dbc83a9da99548188a9d77851d2d7bb58d3b9679a5e703f4b0",
+   "source": "lab ledger seal-file row (sealed before the run)",
+   "seal": "a703963e65"
+  },
+  {
+   "path": "results/p2d/controls_p2d.json",
+   "sha256": "9a638fda7c84c430732146b5cbce50393366af5208457753d75d4cd019e2d045",
+   "source": "lab ledger GO row (controls read before the main run)",
+   "seal": "9677804a51"
+  },
+  {
+   "path": "results/p2d/TARGETS-P2d.md",
+   "sha256": "5f76f324c361c3c92e557927f28c487439cf44756916c44f5257a619d88d4865",
+   "source": "lab ledger seal-file row (sealed before the run)",
+   "seal": "1a9c1237d9"
+  },
+  {
+   "path": "results/p2e/BAR-P2e.md",
+   "sha256": "087472f0506340360ae6b08207a089a69adf09c7b0569b02e2da8120a46c9ffa",
+   "source": "lab ledger seal-file row (sealed before the run)",
+   "seal": "535ea73d73"
+  },
+  {
+   "path": "results/p2e/controls_p2e.json",
+   "sha256": "e96bc6295b0e1a942ef60d1d5abaf2c08fa2252a22bbee5b6ef6ff77897ff474",
+   "source": "lab ledger GO row (controls read before the main run)",
+   "seal": "560847f6a4"
+  },
+  {
+   "path": "results/rep/rep1/BAR-REP1.md",
+   "sha256": "c5a31e696c78c0875f2d72d5b9fd0ce89bd6b8f251f5e77f65ad13f2728159b2",
+   "source": "lab ledger seal-file row (sealed before the run)",
+   "seal": "06e406719a"
+  },
+  {
+   "path": "results/rep/rep2/BAR-REP2.md",
+   "sha256": "97a0e17701611f900f34ade6ec90373dfc606df8b739462c21704e876b91afbd",
+   "source": "lab ledger seal-file row (sealed before the run)",
+   "seal": "0ab09c8b28"
+  },
+  {
+   "path": "results/rep/rep3/BAR-REP3.md",
+   "sha256": "8497823b0b93e9fe11494427c9c6bc1f76a4f71197f6c79a3d2cf8ed59f1d544",
+   "source": "lab ledger seal-file row (sealed before the run)",
+   "seal": "faace3c1c4"
+  },
+  {
+   "path": "results/rep/rep4/BAR-REP4.md",
+   "sha256": "092534d49c3c54ff747fc64b4c7acfc87f5c6693386a501e92d8f9e987180109",
+   "source": "lab ledger seal-file row (sealed before the run)",
+   "seal": "f6c18cffaf"
+  },
+  {
+   "path": "results/rep/rep5/BAR-REP5.md",
+   "sha256": "af044445c1705b5d1baef7c58c7df489fb5aa50023d5682fead628fedc681c67",
+   "source": "lab ledger seal-file row (sealed before the run)",
+   "seal": "5a71a6e4b5"
+  },
+  {
+   "path": "results/rep/rep6/BAR-REP6.md",
+   "sha256": "dc890f893f2c57013eccb3b30ece8a99a7eee4144a9297da990c907a0307b9ce",
+   "source": "lab ledger seal-file row (sealed before the run)",
+   "seal": "6ec2e20968"
+  },
+  {
+   "path": "results/rep/rep6/BAR-REP6b.md",
+   "sha256": "183ac107144bc249c7fe38e77b844f141c182c81f210ca340d3c855cccf458ac",
+   "source": "lab ledger seal-file row (sealed before the run)",
+   "seal": "6c389c64a5"
+  },
+  {
+   "path": "results/rep/rep7/BAR-REP7.md",
+   "sha256": "4cbd205a0f2568c238078c572a31e5428c85c332b894a15ae9b0cee47d4e7e85",
+   "source": "lab ledger seal-file row (sealed before the run)",
+   "seal": "5eee7861ef"
+  }
+ ]
+}

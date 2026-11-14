@@ -1,0 +1,88 @@
+{
+ "seat": "REP6",
+ "seal": "0405395ed8",
+ "object": "Bowen-York spinning puncture, mu1 = 1, j = 2^21 (J = 2^19)",
+ "method": "log-tanh compactification xi = tanh(log(2r)/8) (a quarter-power map, not the sqrt map), inversion-symmetric ansatz u = 2G/(2r+1), G = g0 + (1-xi^2)^4 H(xi, cos theta) with H even Chebyshev x even Legendre; positivity by tensor Chebyshev-Lobatto interpolation of the exact residual with an analytic-continuation (Bernstein polyellipse, Cauchy) error bound in ball arithmetic.",
+ "prec_bits": 256,
+ "nsamp": 64,
+ "a_delta_enclosure": {
+  "delta_lo": "750.5607142022",
+  "delta_hi": "750.5607145913",
+  "delta_lo_exact": "6922700703334567920381/9223372036854775808",
+  "delta_hi_exact": "3461350353461566904819/4611686018427387904",
+  "M_ADM_lo": "751.5607142022",
+  "M_ADM_hi": "751.5607145913",
+  "g0_candidate": "6602001862611701/17592186044416",
+  "eta_plus": "916603410931/9223372036854775808",
+  "eta_minus": "1755359067395/18446744073709551616",
+  "Rhat_sup_upper": "0.0000000496892",
+  "Rhat_inf_lower": "-0.0000000475791",
+  "E_N_inf_lower": "90.826342",
+  "E_minus_inf_lower": "90.826342",
+  "patches": 16,
+  "N": 84,
+  "K": 11,
+  "strict_super": true,
+  "strict_sub": true,
+  "E_minus_positive": true
+ },
+ "b_tangent": {
+  "twoL_hi_exact": "129740615934886563/9223372036854775808",
+  "twoL_hi": "0.0140665057657",
+  "That_sup_upper": "0.00351532",
+  "kappa": "129692229038850723/18446744073709551616",
+  "zeta0": "-6610797909488569/17592186044416",
+  "Phi1_positive_lower_E": "90.826342",
+  "patches": 32,
+  "TL_H_certified": true,
+  "class_K": "structural: psi_+ = 2Z/(2r+1), Z = 2r/(2r+1) G_N - (1-xi^2)^4((1-xi^2)H_xi/8 - xi H) + zeta0 + kappa + (1-xi^2)^4 H_e(xi,c); (1-xi^2)^4 = 512 r/(1+(2r)^(1/4))^8, so every non-constant piece is r times a smooth function of ((2r)^(1/4), cos theta): continuous at 0 with value 2 (zeta0 + kappa), |grad| = O(1), |Lap| = O(1/r), decays like 1/r at infinity (K1-K3 hold)."
+ },
+ "c_chi_tail": {
+  "chi_tail": "0.928235200531265",
+  "chi_tail_exact": "11150372599265311570767859136324180752990208/12012443174837068948228479187165372804564969"
+ },
+ "d_controls": {
+  "K1": {
+   "j": "1/1048576",
+   "delta_over_j2_lo": "0.0249998807907073",
+   "delta_over_j2_hi": "0.0250001192092865",
+   "contains_1_over_40": true
+  },
+  "K1b": {
+   "j": "1/64",
+   "delta_over_j2_lo": "0.0249996925180803",
+   "delta_over_j2_hi": "0.0249996925190627",
+   "contains_1_over_40": false
+  },
+  "KT": {
+   "twoL": "1",
+   "proof": "psi = 0 (class K trivially): That(0) = -(63/32) j^2 (1-c^2) A^11 w^8 (1-xi)^4 / E_-^8 <= 0 since every factor is >= 0 and E_- > 0 is certified in (a); i.e. Delta 0 = 0 <= V1/(2r). 2L = 1 + 2 lim r psi = 1.",
+   "machinery_partial": {
+    "patches_done": 597,
+    "patches_left": 33,
+    "max_sup_bound_on_done": "0.999463",
+    "note": "interpolation run stopped by the seat: the bound c00+sum|c| is loose where That(0) touches 0 at c = 1, so patches kept splitting; not needed for the analytic proof"
+   }
+  },
+  "KN": {
+   "source_factor": "1001/1000",
+   "delta_lo": "750.748516021",
+   "delta_hi": "750.748552358"
+  },
+  "Toy": {
+   "delta_lo": "-1/576460752303423488",
+   "delta_hi": "1/576460752303423488",
+   "contains_0": true,
+   "twoL_hi": "1"
+  }
+ },
+ "convergence": {
+  "mainB_N72_K11": {
+   "delta_lo": "750.5606962809",
+   "delta_hi": "750.5607325779"
+  },
+  "tanB_mainB_Ne100": {
+   "twoL_hi": "0.198916330546"
+  }
+ }
+}

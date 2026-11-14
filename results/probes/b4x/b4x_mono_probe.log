@@ -1,0 +1,6 @@
+solve: g0 = 0.5189781994568448  chi_num = 0.9282004587651369  maxE = 4.646597512314443e-08  supQ = 1.4212639481414015e-07
+P1 min forward difference = -1.2920819969508557e-10  at sigma = -17.34999999999989  count < -1e-12: 2318  count in [-1e-12, 1e-12]: 43
+P2 A0_cyl = 30.137459008505928  A0(sigma=-25) = 30.1374590271623  A0(0) = 62.927370599592756  min dA = -9.01418317766911e-09  min(A0 - A0_cyl) = -2.3591412912082887e-07
+N1 Schwarzschild: negatives detected: 486  largest sigma with negative diff = -0.7499999999996554  (log 1/2 = -0.6931471805599453 )
+VERDICT P1 FAILED | P2 FAILED | N1 null OK
+memcap: exit 0, peak 1.52 GB of 8.00 GB cap

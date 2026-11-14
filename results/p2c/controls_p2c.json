@@ -1,0 +1,530 @@
+{
+ "instrument_sha256": "9d2452bd865bffbe1742454e1e19dab2882d10ffdc7dbd83d5e0ade985fd311b",
+ "engine_sha256": "3659ae21df8534a74ede3af11a1d7fbae670b7478d67c0bb2bd5b34710d79f52",
+ "parts": {
+  "node": {
+   "MEM": {
+    "node": "10000/1",
+    "degrees": [
+     192,
+     12
+    ],
+    "baseline_before": {
+     "peak_working_set_gb": 0.038,
+     "peak_commit_gb": 0.057,
+     "commit_now_gb": 0.057
+    },
+    "peak_after_node": {
+     "peak_working_set_gb": 4.528,
+     "peak_commit_gb": 4.579,
+     "commit_now_gb": 1.241
+    },
+    "seconds": 217.5434832572937,
+    "cap_gb": 8,
+    "timing_parts": {
+     "fit": 33.26756572723389,
+     "S": 184.02090048789978,
+     "bern": 0.22088861465454102,
+     "rest": 0.034128427505493164
+    },
+    "fit": {
+     "fit_ops": "mid",
+     "reached_stop": true,
+     "iters": 4,
+     "last_residual": 1.1210387714598537e-44,
+     "float_residual": 1.500216789455506e-11
+    }
+   },
+   "control_node_j10000": {
+    "j": "10000/1",
+    "j_dec": "10000.000000000000000",
+    "degrees": {
+     "N": 192,
+     "K": 12,
+     "prec_bits": 160,
+     "round_bits": 128
+    },
+    "S": "8006154119182251632220350488129639949752494728907137706364920373797968629277994043509579412203674908315039022911442206241232039182081764823412970215867841336622307706432535917808300545925710148356418292486288359901358361356400665895470439013751313844136274818974946112230089499030558376256030688913308370570100926267444231935666100215496467113077445893986223776128047946949896557299932431837034875652707969973653204063675889958266072831/199376370974471448946744589876975953720398228371839359306680978675052323584187219032952958096899290362973433768703657264036874886082102646890752105935034142293545508467383895461391618434751438522520642120185463167282224834849252730040141269622125495542747174521033698144431407248254858790210788071622009023905969855932527522285379067926696468903839969093921260783717930832165127566512770350007656088565539979274086925218137949618646391193600000000",
+    "S_float": 4.0155982777956064e-11,
+    "eta": "3181487763552176217/158456325028528675187087900672",
+    "eta_float": 2.0078010536842743e-11,
+    "positivity": {
+     "status": "PASS",
+     "pieces": 4,
+     "bern_min": "3402968936540744608944579910702501787297/170141183460469231731687303715884105728",
+     "bern_min_float": 20.000853804636865
+    },
+    "point_checks": {
+     "sup": {
+      "status": "OK",
+      "points": 27
+     },
+     "sub": {
+      "status": "OK",
+      "points": 27
+     }
+    },
+    "status": "CERTIFIED",
+    "delta_lo": "8659510681896170466059033148392628689401/170141183460469231731687303715884105728",
+    "delta_hi": "8660193901191024504941115348354228689401/170141183460469231731687303715884105728",
+    "delta_lo_dec": "50.89602943727101564167158",
+    "delta_hi_dec": "50.90004503937838418903124",
+    "rel_width": 7.889814100956046e-05,
+    "chi_lo": "72370055773322622139731865630429942408293740416025352524660990004945706024960000/77974817707227103056320657463289815608558221257984566876896763568256801126126641",
+    "chi_hi": "72370055773322622139731865630429942408293740416025352524660990004945706024960000/77962752063395986970588934313347402782302880393303550148662147583322708326126641",
+    "chi_lo_dec": "0.9281208716005115706984566",
+    "chi_hi_dec": "0.9282645091142290284297054",
+    "chi_rel_width": 0.00015476164593708572,
+    "t0c": {
+     "stage0_lower": "0.0000000000000000000000000000012572955920125783315",
+     "stage0_upper": "2500000.0000000000000",
+     "inside_stage0": true,
+     "rn_ok": true,
+     "chi_lt_1": true,
+     "ok": true
+    }
+   },
+   "REF_chebyshev_j10000": {
+    "S_matches_record": true,
+    "abs_sum_equals_S": true,
+    "Q_degrees": [
+     1566,
+     192
+    ],
+    "points": [
+     {
+      "s": "111/997",
+      "c": "908/991",
+      "equal": true,
+      "within_S": true,
+      "Q_over_S": 0.03354753612019976
+     },
+     {
+      "s": "476/997",
+      "c": "-828/991",
+      "equal": true,
+      "within_S": true,
+      "Q_over_S": 0.05545018114329304
+     }
+    ],
+    "ok": true,
+    "seconds": 75.85041618347168
+   },
+   "S_memo": "pair checks reuse the exact S (recomputed and matched by REF_chebyshev_j10000)",
+   "N1_j10000": {
+    "status": "VIOLATION",
+    "path": [
+     "point checks: sup VIOLATION, sub OK"
+    ],
+    "sup": {
+     "status": "VIOLATION",
+     "at": [
+      "0/1",
+      "0/1"
+     ],
+     "value_float": 199.99598439789264
+    },
+    "sub": {
+     "status": "OK",
+     "points": 27
+    }
+   },
+   "N4_j10000": {
+    "status": "FAIL",
+    "path": [
+     "point checks: sup OK, sub OK",
+     "Bernstein V_-: PASS",
+     "bound path: sup 2e = 4.012e-11 vs S = 4.016e-11 -> FAILS; sub 2e = 4.016e-11 vs S = 4.016e-11 -> ok"
+    ]
+   },
+   "pair_positive_j10000": {
+    "status": "PASS",
+    "path": [
+     "point checks: sup OK, sub OK",
+     "Bernstein V_-: PASS",
+     "bound path: sup 2e = 4.016e-11 vs S = 4.016e-11 -> ok; sub 2e = 4.016e-11 vs S = 4.016e-11 -> ok"
+    ]
+   },
+   "REF_spherical_j10000": {
+    "points": [
+     {
+      "r": 0.25,
+      "theta": 1.1780972450961724,
+      "E_plus": -0.055484984457371295,
+      "E_minus": 0.055512658490737825,
+      "margin_over_source_term": 0.0006360017977509668,
+      "Q_over_S": -0.1019425947220978,
+      "signs_ok": true,
+      "Q_within_S": true
+     },
+     {
+      "r": 3.75,
+      "theta": 1.2762720155208536,
+      "E_plus": -3.977918872572962e-05,
+      "E_minus": 3.979401351845371e-05,
+      "margin_over_source_term": 0.0003915566314762676,
+      "Q_over_S": 0.020169129916695592,
+      "signs_ok": true,
+      "Q_within_S": true
+     },
+     {
+      "r": 2.0,
+      "theta": 1.3744467859455345,
+      "E_plus": -0.00026249786173704033,
+      "E_minus": 0.0002626149459892857,
+      "margin_over_source_term": 0.0005060672003960522,
+      "Q_over_S": 0.19091018094066503,
+      "signs_ok": true,
+      "Q_within_S": true
+     },
+     {
+      "r": 0.125,
+      "theta": 0.5890486225480862,
+      "E_plus": -0.13133162059337986,
+      "E_minus": 0.1313831030936255,
+      "margin_over_source_term": 0.00061234381830064,
+      "Q_over_S": -0.1582909189772943,
+      "signs_ok": true,
+      "Q_within_S": true
+     },
+     {
+      "r": 0.078125,
+      "theta": 0.7853981633974483,
+      "E_plus": -0.46427214406597167,
+      "E_minus": 0.4644481557217003,
+      "margin_over_source_term": 0.00045192169803376527,
+      "Q_over_S": -0.0022053785104867553,
+      "signs_ok": true,
+      "Q_within_S": true
+     },
+     {
+      "r": 4.375,
+      "theta": 1.2762720155208536,
+      "E_plus": -2.4958930397910262e-05,
+      "E_minus": 2.4967748692102293e-05,
+      "margin_over_source_term": 0.00036484761276283175,
+      "Q_over_S": -0.009804850548602032,
+      "signs_ok": true,
+      "Q_within_S": true
+     }
+    ],
+    "l_ge_4_modes_present": 11,
+    "teeth_largest_eps_that_bites_per_point": [
+     3,
+     3,
+     3,
+     3,
+     3,
+     3
+    ],
+    "Q_teeth_largest_eps_that_bites_per_point": [
+     9,
+     8,
+     9,
+     8,
+     8,
+     8
+    ],
+    "teeth_ok": true,
+    "seconds": 1.679004430770874,
+    "ok": true
+   },
+   "REF_bernstein_j10000": {
+    "points": 6,
+    "all_equal": true,
+    "degrees": [
+     194,
+     24
+    ],
+    "ok": true,
+    "seconds": 0.379849910736084
+   },
+   "seconds": 296.0468182563782
+  },
+  "rest": {
+   "T0": {
+    "status": "REFUSED/TRIVIAL",
+    "S": "0/1",
+    "S_is_zero": true,
+    "p0": "1/40",
+    "certified": false
+   },
+   "nan_inf_guard": {
+    "nan": "INVALID",
+    "inf": "INVALID",
+    "-inf": "INVALID",
+    "1e+300": "INVALID"
+   },
+   "CHAIN": {
+    "first_node": "408162404503791007909934673028597120680242890131500424287099038285814437270363261494520596976526022833642193972454699977107901/396140812571321687967719751680000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "p2b_last_from_file": "408162404503791007909934673028597120680242890131500424287099038285814437270363261494520596976526022833642193972454699977107901/396140812571321687967719751680000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "pinned": "408162404503791007909934673028597120680242890131500424287099038285814437270363261494520596976526022833642193972454699977107901/396140812571321687967719751680000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "equal": true,
+    "p2b_sha_matches_pin": true,
+    "top_node_dec": 11994.815017806193,
+    "n_nodes": 14,
+    "modified_p2b_rc": 5,
+    "modified_p2b_msg": "REFUSED: p2b: sha256 1871c3df07d97607ec0aca71c45ea31446c37ea25170e48b4244c54c730b46ff of <LAB>\\BHSLICE\\seats\\build-p2c\\controls\\result_p2b_modified.json != expected 9f4fa988dfb66bb6978f7e41fe6b26d32c0c152b908061ffe91076bc154776a3",
+    "modified_p2b_output_exists": false
+   },
+   "TAIL": {
+    "X1_exact": "72370055773322622139731865630429942408293740416025352524660990004945706024960000/74987125249873879207473012554314516919282405303862072980947067816436746929738801",
+    "X1_dec_up": "0.96509974921920801712",
+    "X1_mpmath_120": "0.9650997492192080171118573315201674588091",
+    "rel_diff": 0.0,
+    "dec_up_ge_mp": true
+   },
+   "CEIL": {
+    "cli_rc": 0,
+    "cli_out": "ceiling: c = 1.0085551713877978220 (c < 1: False), binding = P2c cell [1030.3467644609451531, 10000.000000000000000]; X1 = 0.96509974921920801712; X3(top) = 0.92812087160051157069; c - X3 = 0.0804342997873; mock = True",
+    "wrong_p2c_sha_rc": 5,
+    "incomplete_grid_without_flag_rc": 5,
+    "mock_sha256": "e0cfac2a9206659036f2ff3d3dfb5568b40cc539639a0413245e14ab1a3ab4b1",
+    "c_assembler": "1.0085551713877978220",
+    "binding_assembler": "P2c cell [1030.3467644609451531, 10000.000000000000000]",
+    "c_mpmath_120": "1.00855517138779782191989305038",
+    "binding_mpmath": "P2c cell [1030.3467644609451531, 10000.000000000000000]",
+    "cells_recomputed": 222,
+    "n_candidates_assembler": 224,
+    "rel_diff": 1.6271946468651815e-76,
+    "assembler_ge_mp": true,
+    "X3_top": "0.92812087160051157069",
+    "c_minus_X3": "0.0804342997873",
+    "chain": [
+     {
+      "how": "19 slabs, float edges shared, 0.0 -> 1.0",
+      "j_from": "0",
+      "j_to": "1",
+      "piece": "P1"
+     },
+     {
+      "how": "122 K1 cells, consecutive, no_gaps",
+      "j_from": "1.0000000000000000000",
+      "j_to": "10.144253562168539132",
+      "piece": "P2a"
+     },
+     {
+      "how": "99 K1 cells, consecutive, no_gaps",
+      "j_from": "10.000000000000000000",
+      "j_to": "1030.3467644609451531",
+      "piece": "P2b"
+     },
+     {
+      "how": "1 K1 cells, consecutive, no_gaps",
+      "j_from": "1030.3467644609451531",
+      "j_to": "10000.000000000000000",
+      "piece": "P2c"
+     },
+     {
+      "how": "delta(j)/sqrt(j) nondecreasing",
+      "j_from": "10000.000000000000000",
+      "j_to": "infinity",
+      "piece": "X1 tail"
+     }
+    ],
+    "chain_links": {
+     "P1 -> P2a": true,
+     "P2a -> P2b": true,
+     "P2b -> P2c": true
+    },
+    "mock_flag_in_output": true
+   },
+   "ENGINE": {
+    "rc": 0,
+    "summary": "28 passed in 217.71s (0:03:37)",
+    "seconds": 219.08369731903076
+   },
+   "RESUME": {
+    "test_grid": [
+     "10/1",
+     "25/2",
+     "125/8",
+     "625/32",
+     "3125/128",
+     "15625/512"
+    ],
+    "uninterrupted_rc": 0,
+    "uninterrupted_seconds": 9.831586360931396,
+    "killed_pid": 6496,
+    "killed_after_nodes": 3,
+    "resumed_rc": 0,
+    "B_invocations": 2,
+    "C_exit_codes": [
+     3,
+     3,
+     3,
+     3,
+     3,
+     0
+    ],
+    "A_eq_B": true,
+    "A_eq_C": true,
+    "rerun_after_finish_rc": 0,
+    "rerun_identical": true,
+    "sha_changed_rc": 4,
+    "sha_changed_output_exists": false,
+    "A_sha256": "0579c4b70c689216afc38cd3ca38ec58872a4930fe14924f76e54eff35ac7549",
+    "A_all_certified": true,
+    "A_no_gaps": false,
+    "no_pickle": "checkpoints are JSON with p/q strings"
+   },
+   "main_refusal": {
+    "rc": 2,
+    "out": "REFUSED: <LAB>/BHSLICE/GO-P2c does not exist (the lead arms it with lab.py go after sealing).",
+    "output_exists": false
+   },
+   "seconds": 255.79915809631348
+  }
+ },
+ "oks": {
+  "MEM_under_cap": true,
+  "control_node_certified": true,
+  "fit_reached_stop": true,
+  "T0c_j10000": true,
+  "finite_j10000": true,
+  "REF_chebyshev_j10000": true,
+  "N1_j10000_violation": true,
+  "N4_j10000_fail_bound_path": true,
+  "pair_positive_j10000": true,
+  "REF_spherical_j10000": true,
+  "REF_bernstein_j10000": true,
+  "T0": true,
+  "nan_inf_guard": true,
+  "CHAIN": true,
+  "TAIL": true,
+  "CEIL": true,
+  "ENGINE": true,
+  "RESUME": true,
+  "main_refusal": true
+ },
+ "expected_false": [
+  "parts.node.N4_j10000.status == FAIL (a margin S/2 (1 - 2^-10) must NOT pass the bound path)",
+  "parts.node.N1_j10000.status == VIOLATION (u_+ - 1e-6 j^2 s must be caught)",
+  "parts.rest.T0.certified (toy J = 0 must be refused as trivial, never certified)",
+  "parts.rest.CHAIN.modified_p2b_output_exists (a modified input copy must be refused)",
+  "parts.rest.CEIL.mock_flag_in_output is True and the mock c is not the P2c value (mock grid = two nodes 1030.35 and 10000; one coarse cell)",
+  "parts.rest.RESUME.sha_changed_output_exists (changed-sha checkpoint must be refused)",
+  "parts.rest.main_refusal.output_exists (no output without GO-P2c)"
+ ],
+ "started": {
+  "node": "2026-11-14 09:31:45",
+  "rest": "2026-11-14 09:37:07"
+ },
+ "parts_done": [
+  "node",
+  "rest"
+ ],
+ "resume_tested": true,
+ "all_ok": true,
+ "degree_schedule": [
+  {
+   "j_upto": "1300",
+   "N": 112,
+   "K": 12
+  },
+  {
+   "j_upto": "2100",
+   "N": 120,
+   "K": 12
+  },
+  {
+   "j_upto": "3200",
+   "N": 128,
+   "K": 12
+  },
+  {
+   "j_upto": "5000",
+   "N": 140,
+   "K": 12
+  },
+  {
+   "j_upto": "8000",
+   "N": 152,
+   "K": 12
+  },
+  {
+   "j_upto": null,
+   "N": 192,
+   "K": 12
+  }
+ ],
+ "grid": {
+  "line": "j_{k+1} = (5/4) j_k from j_0 = P2b's last node (1030.3467644609451531, exact) to the first node >= 10000, plus j = 3000 and j = 10000",
+  "n_nodes": 14,
+  "first": "408162404503791007909934673028597120680242890131500424287099038285814437270363261494520596976526022833642193972454699977107901/396140812571321687967719751680000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+  "nodes_dec": [
+   "1030.34676446",
+   "1287.93345557",
+   "1609.91681947",
+   "2012.39602433",
+   "2515.49503042",
+   "3000.00000000",
+   "3144.36878802",
+   "3930.46098503",
+   "4913.07623129",
+   "6141.34528911",
+   "7676.68161139",
+   "9595.85201424",
+   "10000.0000000",
+   "11994.8150178"
+  ],
+  "degrees": [
+   [
+    112,
+    12
+   ],
+   [
+    112,
+    12
+   ],
+   [
+    120,
+    12
+   ],
+   [
+    120,
+    12
+   ],
+   [
+    128,
+    12
+   ],
+   [
+    128,
+    12
+   ],
+   [
+    128,
+    12
+   ],
+   [
+    140,
+    12
+   ],
+   [
+    140,
+    12
+   ],
+   [
+    152,
+    12
+   ],
+   [
+    152,
+    12
+   ],
+   [
+    192,
+    12
+   ],
+   [
+    192,
+    12
+   ],
+   [
+    192,
+    12
+   ]
+  ]
+ }
+}

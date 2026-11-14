@@ -1,0 +1,224 @@
+{
+ "all_ok": true,
+ "cases": {
+  "NULL": {
+   "K": 12,
+   "N": 112,
+   "eta_factor": "4",
+   "fac": "1001/1000",
+   "model": "BY"
+  },
+  "RN": {
+   "K": 0,
+   "N": 64,
+   "eta_factor": "2",
+   "fac": "1",
+   "model": "RN"
+  }
+ },
+ "chunk_peaks": [
+  {
+   "peak_commit_gb": 0.972,
+   "peak_working_set_gb": 0.956
+  }
+ ],
+ "expected_false": [
+  "parts.NULL.overlaps_P2e_window (the 1e-3 source null must move the window off P2e)",
+  "parts.NULL.inside_P2e_window (same: the null window must not sit in the P2e window)",
+  "parts.MARGIN.margin_patch_accepted (eta below the certified sup: the patch certificate must reject)",
+  "parts.MARGIN.margin_assembly_succeeded (eta below the certified sup: the assembly must refuse)",
+  "parts.COVER.RN_missing_patch_cover_ok (one patch dropped: the exact cover check must fail)",
+  "parts.COVER.RN_duplicate_patch_cover_ok (one patch duplicated: the overlap check must fail)",
+  "parts.COVER.NULL_missing_patch_cover_ok (one patch dropped: the exact cover check must fail)",
+  "parts.COVER.NULL_duplicate_patch_cover_ok (one patch duplicated: the overlap check must fail)",
+  "parts.NANINF.nan_patch_accepted (mock variant: NaN coefficient injected; the patch must be rejected)",
+  "parts.NANINF.inf_patch_accepted (mock variant: inf coefficient injected; the patch must be rejected)",
+  "parts.RESUME.foreign_checkpoint_refused is True but its rc is 4, not 0 (mock checkpoint with a zero sha)",
+  "parts.GATE.no_go_output_exists (no output without GO-B3T)",
+  "parts.GATE.real_GO_file_exists (GO-B3T is armed by the lead after the controls; absent now)",
+  "parts.GATE.wrong_sha_rc / other_seal_rc / other_file_rc are 6, not 0 (mock scratch ledgers that must not pin)",
+  "parts.GATE.right_sha_passes (mock: scratch ledger + scratch GO file; the real ledger is never written)"
+ ],
+ "instrument_sha256": "0043585b666fd0f5b0afd2ab4f16dc98335600834943c6a8bd7fdee13aed679a",
+ "main_cfg": {
+  "K": 12,
+  "N": 112,
+  "eta_factor": "4",
+  "fac": "1",
+  "model": "BY"
+ },
+ "oks": {
+  "C0": true,
+  "COVER": true,
+  "GATE": true,
+  "MARGIN": true,
+  "MEM": true,
+  "NANINF": true,
+  "NULL": true,
+  "RESUME": true,
+  "RN": true
+ },
+ "parts": {
+  "C0": {
+   "BY": {
+    "integrand_rel": "3.13e-41",
+    "residual_worst_rel": "1.93e-40"
+   },
+   "RN": {
+    "integrand_rel": "1.84e-41",
+    "residual_worst_rel": "2.34e-40"
+   },
+   "ok": true
+  },
+  "COVER": {
+   "NULL_duplicate_patch_cover_ok": false,
+   "NULL_missing_patch_cover_ok": false,
+   "NULL_patches": 17,
+   "RN_duplicate_patch_cover_ok": false,
+   "RN_missing_patch_cover_ok": false,
+   "RN_patches": 17,
+   "ok": true
+  },
+  "GATE": {
+   "no_go_msg": "REFUSED: <LAB>\\BHSLICE\\seats\\build-b3t\\GO-fake-absent does not exist (the lead arms it with lab.py go after sealing).",
+   "no_go_output_exists": false,
+   "no_go_rc": 2,
+   "ok": true,
+   "other_file_rc": 6,
+   "other_seal_rc": 6,
+   "real_GO_file_exists": false,
+   "right_sha_passes": true,
+   "run_main_rc_without_GO": 2,
+   "wrong_sha_rc": 6
+  },
+  "MARGIN": {
+   "certified_sup": "0.00000000000216745",
+   "eta_null": "2898219/18446744073709551616",
+   "eta_null_below_certified_sup": true,
+   "eta_null_dec": "0.000000000000157113",
+   "margin_assembly_succeeded": false,
+   "margin_null_FAILED_as_required": true,
+   "margin_patch_accepted": false,
+   "witness_Q_shifted_lower": "0.0000000000000978244",
+   "witness_patch": [
+    "0/1",
+    "1/8",
+    "0/1",
+    "1/1"
+   ],
+   "witness_point": [
+    0.0015707956808309418,
+    0.0
+   ],
+   "witness_proves_not_super": true
+  },
+  "MEM": {
+   "cap_gb": 8,
+   "earlier_chunk_peaks": [
+    {
+     "peak_commit_gb": 0.972,
+     "peak_working_set_gb": 0.956
+    }
+   ],
+   "peak_this_chunk": {
+    "peak_commit_gb": 0.972,
+    "peak_working_set_gb": 0.956
+   }
+  },
+  "NANINF": {
+   "inf_patch_accepted": false,
+   "nan_patch_accepted": false,
+   "ok": true,
+   "states_free_of_nan_inf": true
+  },
+  "NULL": {
+   "M_int_upper_dec": "1.0382157907520",
+   "M_lo": "2114882916960212338042085485741593177348396658696855428782581092294776781385064240728009593/2037035976334486086268445688409378161051468393665936250636140449354381299763336706183397376",
+   "M_lo_dec": "1.0382157907519",
+   "M_up": "627562937894764665634817/604462909807314587353088",
+   "M_up_dec": "1.0382157907668",
+   "chi_hi": "4149515568880992958512407863691161151012446232242436899995657329690652811412908146399707048947103794288197886611300789182395151075411775307886874834113963687061181803401509523685376/4472729752450136395837254699741162252113937432382135773538419045393278427053548553554479773671210482005409954498377567418974663978335743878132808421129110210758787812506607500025649",
+   "chi_hi_dec": "0.92773670633866",
+   "chi_lo": "365375409332725729550921208179070754913983135744/393835241019108252779821258823643866085602623489",
+   "chi_lo_dec": "0.92773670631216",
+   "eta": "3050500521985/1208925819614629174706176",
+   "eta_dec": "0.00000000000252332",
+   "expected_shift_note": "chi scales as fac^-1/2 at fixed J: about -4.6e-4 for fac = 1.001",
+   "float_info": {
+    "Gmin": 0.5191078953808458,
+    "M_float": 1.0382157907616916,
+    "argmax": [
+     0.0015707956808309418,
+     0.0
+    ],
+    "colloc_max_abs_Q": 5.222489107836736e-13,
+    "infQ": -6.321609902215641e-13,
+    "iterations": 8,
+    "supQ": 6.308287225920139e-13
+   },
+   "g0": "4675708248404519/9007199254740992",
+   "inf_G_N_lower": "0.5184940372",
+   "inside_P2e_window": false,
+   "overlaps_P2e_window": false,
+   "patches": 17,
+   "quad_err_per_area_max": 1.1090316581023875e-16,
+   "supQ_upper": "0.00000000000216745",
+   "width_dec": "0.00000000002649"
+  },
+  "RESUME": {
+   "chunks_B": 18,
+   "foreign_checkpoint_rc": 4,
+   "foreign_checkpoint_refused": true,
+   "ok": true,
+   "rc_A": 0,
+   "rc_B_final": 0,
+   "result_identical": true,
+   "state_bytes_identical": true
+  },
+  "RN": {
+   "M_int_upper_dec": "0.99999999997719",
+   "M_lo": "7588550360083585782928580419588785372955673087415495870902925937818315290384747871/7588550360256754183279148073529370729071901715047420004889892225542594864082845696",
+   "M_lo_dec": "0.99999999997718",
+   "M_up": "604462909824490161569793/604462909807314587353088",
+   "M_up_dec": "1.0000000000285",
+   "chi_hi": "57586096570152913699974892898380567793532123114264532903689671329431521032595044740083720782129802971518987656109067457577065805510327036019308994315074097345724416/57586096567524719446274108177826640353715709626399353192120950046828573063360191816080250360489245451241799229082521731401006627117376578340334485416526104239032641",
+   "chi_hi_dec": "1.0000000000457",
+   "chi_lo": "365375409332725729550921208179070754913983135744/365375409353489724688498193141057365938010062849",
+   "chi_lo_dec": "0.99999999994317",
+   "eta": "17175574216705/1208925819614629174706176",
+   "eta_dec": "0.0000000000142074",
+   "float_info": {
+    "Gmin": 0.5,
+    "M_float": 1.0,
+    "argmax": [
+     0.07532680552793262,
+     0.0
+    ],
+    "colloc_max_abs_Q": 6.873834834664194e-12,
+    "infQ": -7.116085498637403e-12,
+    "iterations": 6,
+    "supQ": 7.103651000761602e-12
+   },
+   "g0": "1/2",
+   "inf_G_N_lower": "0.4994098969",
+   "patches": 17,
+   "quad_err_per_area_max": 1.5852546001604845e-18,
+   "supQ_upper": "0.0000000000130232",
+   "width_dec": "0.0000000001025",
+   "window_contains_1": true
+  }
+ },
+ "parts_done": [
+  "C0",
+  "RN",
+  "NULL",
+  "MARGIN",
+  "COVER",
+  "NANINF",
+  "RESUME",
+  "GATE",
+  "MEM"
+ ],
+ "resume_tested": true,
+ "seal": "10a65e940a"
+}

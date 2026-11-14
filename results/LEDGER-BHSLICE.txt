@@ -1,0 +1,45 @@
+565736c4c4  2026-11-14  [BHSLICE-P1]  BHSLICE P1: certified Bowen-York spinning puncture mu=1, every J in [0,1/4]: all slabs clo  ->  HOLD (P1 CERTIFIED: 19/19 slabs close; M_ADM - 1 certified at 5 J )
+e1c57f6005  2026-11-14  [BHSLICE-P1]  BAR before code  ->  open
+51253b7dc7  2026-11-14  [BHSLICE-P1]  p1.py as built  ->  open
+e44dd02296  2026-11-14  [BHSLICE-REP1]  BHSLICE blind replication: independent rigorous delta(0.0625), delta(0.25) overlap P1's ce  ->  HOLD (REPLICATED: blind delta(0.25) in P1 ball, rel width 1.4e-21;)
+06e406719a  2026-11-14  [BHSLICE-REP1]  BAR before blind seat  ->  open
+b18e905ff1  2026-11-14  [BHSLICE-P2]  P2 targets before code  ->  open
+d62bfc0e0b  2026-11-14  [BHSLICE-P2a]  BHSLICE P2a: certified BY data for every j in [1,10]: all nodes certify; delta overlaps TA  ->  HOLD (P2a CERTIFIED: 123/123 nodes, no gaps, max pointwise cell wi)  (+1 amendment)
+de758dbbf3  2026-11-14  [BHSLICE-P2a]  BAR before code  ->  open
+91b477f300  2026-11-14  [BHSLICE-P2a]  p2a.py as built  ->  open
+227cbcafc2  2026-11-14  [BHSLICE-REP2]  BHSLICE blind replication of P2a: independent rigorous delta(6), delta(10) overlap P2a's c  ->  HOLD (REPLICATED: blind delta(10) inside P2a, rel width 3.4e-21; d)
+0ab09c8b28  2026-11-14  [BHSLICE-REP2]  BAR before blind seat  ->  open
+eba765ebe0  2026-11-14  [BHSLICE-P2b]  BHSLICE P2b: certified BY data for every j in [10,1000] via gravity_engine: all nodes cert  ->  HOLD (P2b CERTIFIED: 100/100 nodes j in [10,1030.35], no gaps, max)
+d5e41fe748  2026-11-14  [BHSLICE-P2b]  BAR before code  ->  open
+571c21859b  2026-11-14  [BHSLICE-P2b]  p2b.py as built  ->  open
+a669f700df  2026-11-14  [BHSLICE-REP3]  BHSLICE blind replication of P2b: independent rigorous delta(300), delta(1000) overlap P2b  ->  HOLD (REPLICATED: blind delta(1000) inside P2b, width 1.7e-16; del)
+faace3c1c4  2026-11-14  [BHSLICE-REP3]  BAR before blind seat  ->  open
+3031217ac8  2026-11-14  [BHSLICE-P2c]  BHSLICE P2c: certified uniform spin ceiling: for every Bowen-York spinning puncture (mu >   ->  HOLD (P2c CERTIFIED: uniform Bowen-York spin ceiling J/M_ADM^2 <= )
+e2da2198e4  2026-11-14  [BHSLICE-P2c]  BAR before code  ->  open
+ca9e5cb837  2026-11-14  [BHSLICE-P2c]  p2c.py as built (sha 9d2452bd...)  ->  open
+ad62cca292  2026-11-14  [BHSLICE-REP4]  BHSLICE blind replication of P2c: independent rigorous delta(3000), delta(10000)  ->  HOLD (REPLICATED: blind delta(10000) = 50.898037238324703198 (rel )
+f6c18cffaf  2026-11-14  [BHSLICE-REP4]  BAR before blind seat  ->  open
+1a9c1237d9  2026-11-14  [BHSLICE-P2d]  design + targets sealed before any P2d code  ->  open  (+2 amendments)
+9677804a51  2026-11-14  [BHSLICE-P2d]  BHSLICE P2d: sharp certified Bowen-York spin ceiling via the tangent lemma  ->  HOLD (measured text corrected: REFEREE-P2d 4a-4c: rounded 6th digit undecided; ~57,000x not 58,000x; Lovelace's printed bound exceeded by a certified member) (P2d CERTIFIED: Bowen-York family sup J/M_ADM^2 in [0.9282003)  (+1 amendment)
+a703963e65  2026-11-14  [BHSLICE-P2d]  BAR before code  ->  open
+d8e95cab4f  2026-11-14  [BHSLICE-P2d]  p2d.py as built (sha f1fae733)  ->  open
+9e0df55e7a  2026-11-14  [BHSLICE-REP5]  BHSLICE blind replication of P2d tangent certificates  ->  HOLD (REPLICATED: blind s-coordinate certifier: slope upper bounds)
+5a71a6e4b5  2026-11-14  [BHSLICE-REP5]  BAR before blind seat  ->  open
+560847f6a4  2026-11-14  [BHSLICE-P2e]  BHSLICE P2e: decide the sixth digit of the Bowen-York maximal spin  ->  HOLD (measured text corrected: REFEREE-P2e 5b/5d: display directions and Lovelace wording) (P2e CERTIFIED: Bowen-York family sup J/M_ADM^2 in [0.9282004)
+535ea73d73  2026-11-14  [BHSLICE-P2e]  BAR before code  ->  open
+dd66747558  2026-11-14  [BHSLICE-P2e]  p2e.py as built (sha a25e6cc4)  ->  open
+0405395ed8  2026-11-14  [BHSLICE-REP6]  BHSLICE blind replication of P2e top node 2^21  ->  FAILED (R1 HOLD: blind delta(2^21) = [750.5607142022, 750.5607145913)
+6ec2e20968  2026-11-14  [BHSLICE-REP6]  BAR before blind seat  ->  open
+3e929bb723  2026-11-14  [BHSLICE-REP6b]  BHSLICE REP6b: tighter blind tangent at top node  ->  HOLD (REPLICATED (decision): blind (quarter-power/log map, polyell)
+6c389c64a5  2026-11-14  [BHSLICE-REP6b]  BAR before seat resumes  ->  open
+a580a8ad0f  2026-11-14  [BHSLICE-B2V]  BHSLICE B2V: certified-data tests of monotonicity, convexity, tangent-free tail, exponent   ->  HOLD (V1 HOLD convexity: 20/20 chord inequalities decided true, no)
+1b6f7e924c  2026-11-14  [BHSLICE-B2V]  BAR before run  ->  open
+de2cac1c1a  2026-11-14  [BHSLICE-B2V]  instrument before real-data run  ->  open
+10a65e940a  2026-11-14  [BHSLICE-B3T]  BHSLICE B3T: certified spin of the extreme Bowen-York data  ->  HOLD (B3T CERTIFIED: spin of the EXTREME (mu = 0) Bowen-York data,)
+f36e40b1bd  2026-11-14  [BHSLICE-B3T]  BAR before code  ->  open
+817b09832c  2026-11-14  [BHSLICE-B3T]  b3t.py as built (sha 0043585b)  ->  open
+133b99d241  2026-11-14  [BHSLICE-REP7]  BHSLICE REP7: blind replication of the extreme-data spin  ->  HOLD (REPLICATED: blind seat, own formulation (F = r(psi^2-1) cyli)
+5eee7861ef  2026-11-14  [BHSLICE-REP7]  BAR before blind seat  ->  open
+0ce319a05a  2026-11-14  [BHSLICE-FLUXT]  BHSLICE FLUXT: direct slice test of the throat flux identity  ->  HOLD (FLUXT HOLD: on the independent 2-D B3T float solution (compu)
+b04ad57b36  2026-11-14  [BHSLICE-FLUXT]  BAR before code  ->  open
+d4dc8a533a  2026-11-14  [BHSLICE-FLUXT]  fluxt.py as built (sha 957929cc)  ->  open

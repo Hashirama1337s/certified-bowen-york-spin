@@ -1,0 +1,63 @@
+{
+ "seat": "REP6b",
+ "seal": "3e929bb723",
+ "prec_bits": 256,
+ "nsamp": 64,
+ "disclosure": "brief named the decision threshold chi_tail < 0.9282005 and the prior score; computation choices (N, Ne, targets) were driven by the residual levels, the threshold was only compared at the end",
+ "delta_recertified": {
+  "N": 96,
+  "K": 11,
+  "delta_lo": "750.5607143858",
+  "delta_hi": "750.5607143991",
+  "delta_lo_exact": "29732773128094095017889988176711/39614081257132168796771975168",
+  "delta_hi_exact": "7433193282153572059226005079007/9903520314283042199192993792",
+  "eta_plus": "64228897244483978207/19807040628566084398385987584",
+  "eta_minus": "263277630036096226489/79228162514264337593543950336",
+  "Rhat_sup_upper": "0.00000000162137",
+  "Rhat_inf_lower": "-0.00000000166152",
+  "E_minus_inf_lower": "90.826342",
+  "patches": 21
+ },
+ "tangent": {
+  "sub_solution": "u_- of main96 (eta_minus above)",
+  "Ne": 200,
+  "Ke": 11,
+  "twoL_hi": "0.00000731429428113",
+  "twoL_hi_exact": "36218630998887604547347/4951760157141521099596496896",
+  "That_sup_upper": "0.000000484518",
+  "kappa": "9596870690881929080595/9903520314283042199192993792",
+  "zeta0": "-3305398954172081/8796093022208",
+  "float_twoL_estimate": 5.376221679398441e-06,
+  "float_colloc_residual": 1.8923310562968254e-07,
+  "patches": 36,
+  "TL_H_certified": true,
+  "class_K": "structural, as in REP6 (same ansatz form, Ne changed only)"
+ },
+ "chi_tail": "0.928200472039702",
+ "chi_tail_exact": "822752278660603021077484591278675252491367932816789931674304512/886395022890498936572475218749322272716694361052057255826248609",
+ "chi_tail_below_0.9282005": true,
+ "KT": {
+  "method": "machinery on the cofactor F = That(0)/q, q = (1-c^2)(1-xi)^4 w^8 >= 0 (factorisation checked against rep6.tan_point, worst rel. diff 9.1e-50)",
+  "F_sup_upper": "-0.976037",
+  "patches": 268,
+  "kappa": "0",
+  "twoL_hi": "1",
+  "note": "direct interpolation of That(0) itself was abandoned: That(0) attains its max 0 on c = 1 and xi = +-1, so the coefficient-sum bound can never reach <= 0 and patches kept splitting (840 accepted, 35 pending when the seat stopped it)"
+ },
+ "KZ": {
+  "kappa_Z": "60181647628164696615793051211243456073919000789071343806865087936609738218913677/62165404551223330269422781018352605012557018849668464680057997111644937126566671941632",
+  "kappa_Z_rule": "2 sup That (1 - 2^-10)  [= (2/3) sup (1-2^-10) in the Lin[1] = -3/2 normalisation]",
+  "patches": 36,
+  "patches_with_sup_bound_positive": 24,
+  "max_sup_bound": "0.0000944815",
+  "certificate_issued": false,
+  "expected": "FAIL"
+ },
+ "convergence": {
+  "tan160_twoL_hi": "0.0000211203537762",
+  "rep6_main_N84_delta": [
+   "750.5607142022",
+   "750.5607145913"
+  ]
+ }
+}
