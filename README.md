@@ -4,7 +4,7 @@
 carries a guaranteed error bar, that its J/M² always stays below 0.9282004588 and, for a small enough bare mass,
 rises above 0.9282004587.**
 
-![Licence: text and data CC BY 4.0, code MIT](brand/licence.svg) [![Moki & Julio lab map](brand/lab.svg)](https://github.com/Hashirama1337s)
+[![DOI 10.5281/zenodo.24233955](brand/doi.svg)](https://doi.org/10.5281/zenodo.24233955) ![Licence: text and data CC BY 4.0, code MIT](brand/licence.svg) [![Moki & Julio lab map](brand/lab.svg)](https://github.com/Hashirama1337s)
 
 Moki & Julio · 2026 · version 1.0
 
@@ -133,10 +133,10 @@ every number with its source file.
 ## How to cite
 
 ```
-Moki & Julio (2026). Certified spin, mass and horizons of the Bowen-York spinning puncture family. Version 1.0.
+Moki & Julio (2026). Certified spin, mass and horizons of the Bowen-York spinning puncture family. Version 1.0. Zenodo. https://doi.org/10.5281/zenodo.24233955
 ```
 
-Text and data: CC BY 4.0 (`LICENSE`). Code: MIT (`LICENSE-CODE`).
+The DOI always resolves to the newest archived version. Version 1.0 is 10.5281/zenodo.24233956. Machine-readable: [CITATION.cff](CITATION.cff). Text and data: CC BY 4.0 (`LICENSE`). Code: MIT (`LICENSE-CODE`).
 
 ## Related projects
 
