@@ -6,13 +6,17 @@ rises above 0.9282004587.**
 
 [![DOI 10.5281/zenodo.24233955](brand/doi.svg)](https://doi.org/10.5281/zenodo.24233955) ![Licence: text and data CC BY 4.0, code MIT](brand/licence.svg) [![Moki & Julio lab map](brand/lab.svg)](https://github.com/Hashirama1337s)
 
-Moki & Julio · 2026 · version 1.0
+Moki & Julio · 2026 · version 1.0.1
 
-**Read** [paper.md](paper.md) · **Re-run** [code/RUN.md](code/RUN.md) · **Check** [CLAIMS.md](CLAIMS.md) and [SCORECARD.md](SCORECARD.md)
+**Read** [paper.md](paper.md) · **Re-run** [tools/reproduce.md](tools/reproduce.md) · **Check** [CLAIMS.md](CLAIMS.md) and [SCORECARD.md](SCORECARD.md)
 
 **The magic trick.** The fastest-spinning member of this family does not exist: every member can be beaten. Yet the
 ceiling is a real object, an endless throat, and one certified function drawn on that throat pins its spin from both
 sides to ten digits.
+
+![Top: certified spin values climbing toward the ceiling of the endless throat as j grows; bottom: their distance below the ceiling falling to about 5 billionths, never zero](figures/spin-ceiling.svg)
+
+*A spin ceiling, proved. Top: the spin J/M² at j = 1, 2, 4, …, 2²¹ (green, each certified to within 8.2 × 10⁻⁹) and a certified upper bound for every j in each stretch (blue steps; the last covers all j beyond 2²¹). Orange: the ceiling, the spin of the endless throat at μ = 0, certified in [0.92820045875619, 0.92820045878266]. Dashed: 1, the most a settled black hole can spin, for comparison. Bottom: distance below the ceiling (log scale), from 0.69 at j = 1 to at least 4.7 × 10⁻⁹ at j = 2²¹; no setting reaches the ceiling.*
 
 ## In plain words
 
@@ -25,6 +29,10 @@ We certified the ceiling. For every setting up to j ≈ 12,000 we trapped the ma
 that we bounded the spin from above, so every bound is a proof, not an estimate. The spin ratio grows as one parameter, the "bare mass", shrinks,
 but no setting reaches the top. In the limit the black hole becomes an infinitely long throat. We measured that limit
 directly: J/M² lies between 0.92820045875619 and 0.92820045878266.
+
+![Three nested certified windows for the spin ceiling: P2d, P2e inside it, and the endless throat's window inside that](figures/pinning-the-ceiling.svg)
+
+*Pinning the ceiling. Three certified windows for the same number, each inside the one before (J/M² − 0.9282, in billionths): the earlier certificate P2d, [0.9282003665, 0.9282009626]; the final certificate P2e, [0.9282004538, 0.9282004687], enough to round the ceiling to 0.928200; the endless throat certified directly (B3T), [0.92820045875619, 0.92820045878266], 2.6 × 10⁻¹¹ wide. Ends rounded outward.*
 
 Along the way we proved four facts by hand. The mass is a convex curve with no kinks in the bare mass. The mass of the
 limiting throat is fixed by one curve on a sphere. For any finite bare mass the black hole's surface sits exactly at
@@ -109,7 +117,7 @@ every number with its source file.
 
 - **Questions it answers.** What is the mass of a Bowen-York spinning puncture at a given spin, with a guarantee? How
   close to the ceiling is a given setting? Does a candidate surface in these data form a horizon?
-- **Reproduce.** Instructions are in [code/RUN.md](code/RUN.md). The certificate runs, their result files and the
+- **Reproduce.** Instructions are in [tools/reproduce.md](tools/reproduce.md). The certificate runs, their result files and the
   sealed verdicts are in `code/` and `results/`.
 - **Reuse.** The engine in `code/gravity_engine/` certifies sub/super-solution pairs for axisymmetric Lichnerowicz
   equations; the tangent certificate gives one-sided global mass bounds from one node. The throat formula turns the
@@ -130,13 +138,51 @@ every number with its source file.
   internal checks, not external peer review; a blind seat did not see our code or the values it was asked to reproduce; partial context is disclosed per test in the paper (Section 9).
 - **Lean**: an interactive proof assistant whose kernel checks every step of a formal proof.
 
+## Open doors
+
+What this work leaves open, and what we noticed along the way but did not follow up, for anyone who wants to take the next step.
+
+- **Nudge the extreme throat: does a horizon always appear.** We proved that the extreme (μ = 0) data have no horizon.
+  Dain and Gabach Clement also expected the second half of the picture: that a small change of extreme data, in
+  particular of the extreme Bowen-York data, always produces a horizon, and they asked for a proof or a disproof. Along
+  the Bowen-York family itself it holds: for every bare mass μ > 0 the throat r = μ/2 is a minimal surface. For general
+  small changes it is not settled. In 2010 they also asked whether small deformations of extreme Kerr data contain
+  trapped surfaces. *Status:* open according to Dain and Gabach Clement 2009 (arXiv:0806.2180, Section 6; no later answer
+  found in our search of 17 November 2026). *Start here:* the two no-horizon proofs in paper.md Sections 8.2-8.3; an idea
+  we did not test is that the sliding argument needs no explicit spacetime, which is the situation of deformed data.
+  *Ceiling:* a theorem that extreme spinning data sit exactly on the edge between "no horizon" and "horizon".
+- **How fast the spin approaches its ceiling.** A heuristic matched-asymptotics argument at the throat (Conjecture E)
+  suggests M(μ) − M_0 ~ μ^{2ν} with ν ≈ 1.38201913608948921114, set by the lowest eigenvalue of one operator on the
+  sphere. It is a heuristic, not a proof; one sealed numerical check agrees (local exponent 0.882059 against the predicted
+  0.882019). Whether Lovelace et al.'s fitted power law is a two-digit view of the same exponent is not established.
+  *Status:* UNTESTED observation from this work (a heuristic with one sealed numerical check). *Start here:* paper.md
+  Section 5 (Conjecture E and the B2V test) and the throat profile equation of Section 7. *Ceiling:* a proved law for how
+  the spin of these black holes nears 0.9282.
+- **A certified area-spin constant.** Every Bowen-York throat with bare mass μ > 0 obeys A ≥ 8π|J| (Dain and Reiris).
+  Our probe value for the best constant in this family is A_0/(8πJ) ≈ 1.1991, the value at the extreme throat; numerical
+  work already showed Bowen-York horizons staying about 20% away from the extreme-Kerr equality. We proved only one
+  direction (every μ > 0 throat has area above A_0); that the constant is sharp, and its digits, are not certified.
+  *Status:* open as far as our dated search found (17 November 2026; arXiv, INSPIRE and Zenodo: no proved or certified
+  family-wide constant). *Start here:* paper.md Section 8.4 (area corollaries and probe values) and the one-dimensional
+  throat problem of Section 7, where A_0 = ∫ V⁴ dΩ. *Ceiling:* a sharp, certified bound on how close Bowen-York black
+  holes can come to extreme Kerr.
+- **A one-line mass for related throats.** The flux identity of Section 7 turns the mass of the extreme throat into an
+  integral over one sphere. We noticed that the same argument seems to apply to other single throats whose equation does
+  not change along the throat, such as the maximally sliced spinning "trumpet" data of Hannam, Husa and Ó Murchadha
+  (2009); boosted data do not qualify. This was a quick derivation, not refereed and not tested. *Status:* UNTESTED
+  observation from this work. *Start here:* paper.md Section 7 (the general sphere equation L_S V − V/4 + C V^-p = 0 and
+  its extreme Reissner-Nordström control) and Appendices A-B for the two limit steps. *Ceiling:* the mass of a family that
+  simulations already use, as a one-dimensional integral with a proof.
+
 ## How to cite
 
 ```
-Moki & Julio (2026). Certified spin, mass and horizons of the Bowen-York spinning puncture family. Version 1.0. Zenodo. https://doi.org/10.5281/zenodo.24233955
+Moki & Julio (2026). Certified spin, mass and horizons of the Bowen-York spinning puncture family. Version 1.0.1. Zenodo. https://doi.org/10.5281/zenodo.24233955
 ```
 
 The DOI always resolves to the newest archived version. Version 1.0 is 10.5281/zenodo.24233956. Machine-readable: [CITATION.cff](CITATION.cff). Text and data: CC BY 4.0 (`LICENSE`). Code: MIT (`LICENSE-CODE`).
+
+v1.0.1: adds Open doors and figures; corrections dated 2026-11-17; no change to the certified results. Correction 2026-11-17: the "Re-run" and "Reproduce" links pointed to `code/RUN.md`, which never existed in this repository; they now point to [tools/reproduce.md](tools/reproduce.md).
 
 ## Related projects
 

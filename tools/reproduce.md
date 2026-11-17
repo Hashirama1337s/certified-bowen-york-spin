@@ -95,3 +95,8 @@ where `ENGINE_DIR` is a folder containing `gravity_engine/` (for example a copy 
 - `code/gravity_engine/tests/` are the engine's own tests as they stand in the lab. They read the lab's result files
   by absolute lab paths, so they do not run from this repository as shipped; they are included as the record of what
   the engine was tested against (P2a and P2b nodes byte for byte, REP4 resolution, the tangent certificate).
+
+## Figures (optional; not run by tools/reproduce.py)
+
+The two README figures are drawn from shipped files only: `python figures/make_figures.py .` (Python 3.11,
+matplotlib 3.11; seconds; reads only shipped files). It rewrites `figures/*.svg`; two runs give byte-identical SVGs.

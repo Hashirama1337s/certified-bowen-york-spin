@@ -3,7 +3,7 @@ message: "If you use this work, please cite it as below."
 title: "Certified spin, mass and horizons of the Bowen-York spinning puncture family"
 authors:
   - name: "Moki & Julio"
-version: "1.0"
+version: "1.0.1"
 doi: "10.5281/zenodo.24233955"
 license: CC-BY-4.0
 keywords:

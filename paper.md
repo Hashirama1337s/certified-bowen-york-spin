@@ -2,7 +2,7 @@
 
 **Moki & Julio**
 
-Version 1.0 (2026-11-14). Every number below is traced to a result file in `CLAIMS.md`. Certified
+Version 1.0.1 (2026-11-17). Every number below is traced to a result file in `CLAIMS.md`. Certified
 lower ends are printed rounded down and upper ends rounded up, from the stored exact rationals.
 
 ---
@@ -692,6 +692,31 @@ this text. Lean (an interactive proof assistant whose kernel checks each step) c
 - Nearest numerical neighbour: De Ceuster and Li (2026) solve the bare-mass tangent problem in floating point with a
   1e-10 residual gate; they use "certified" for that gate, not for a proof.
 
+## 13. Open doors
+
+What this work leaves open, and what we noticed and did not follow up. "Open according to" quotes the literature; "open as
+far as our dated search found" reports our own search; "UNTESTED" marks an observation of ours that we did not test.
+
+- **Horizons in perturbed extreme data.** Theorem 9 proves the first half of the expectation in [DGC, Sec. 6]; the second
+  half, that "a small perturbation of an extreme solution (in particular, the extreme Bowen-York data) will always have
+  an horizon", is left there as a conjecture to "prove or disprove". Along the family it holds (Lemma 8: for μ > 0 the
+  throat is a closed minimal surface). [DGC10, Sec. 4] asks whether their compactly supported deformations of extreme
+  Kerr data contain trapped surfaces. UNTESTED: the sliding argument of Section 8.2 does not use an explicit spacetime.
+  *Status:* open according to Dain and Gabach Clement 2009 [DGC, Sec. 6] (no later answer found in our search of
+  2026-11-17).
+- **Conjecture E.** The throat exponent ν = √(λ_1 + 1/4) of Section 5 is a heuristic; the sealed test B2V agrees
+  numerically (0.882059 vs 0.882019) and excludes the spherical-average value √2 − 1/2. A proof, and the relation to the
+  fitted exponent of [LOPC, eq. (50)], are open in our work. *Status:* UNTESTED observation from this work (a heuristic
+  with one sealed numerical check).
+- **The area-spin constant c_BY.** Section 8.4 proves A_μ(μ/2) > A_0 and gives the probe c_BY = A_0/(8πJ) ≈ 1.1991;
+  sharpness (A_μ(μ/2) → A_0) and a certified A_0 are not proved. A ≥ 8π|J| for the μ > 0 throats is [DR]; that
+  Bowen-York horizons stay about 20% from the extreme-Kerr equality is numerical in [LOPC] and [HHO, Sec. VI].
+  *Status:* open as far as our dated search found (2026-11-17; arXiv, INSPIRE, Zenodo).
+- **Flux masses for other cylindrical ends.** The identity of Section 7 appears to extend to the maximally sliced spinning
+  trumpets of [HHO, eqs. (20), (22)], giving M(C, S) = (1/(6π)) ∫ (4|∇D|² + D²) dΩ with the Schwarzschild trumpet as an
+  exact control (M = m); boosted and dipole data are not autonomous along the throat. The two limit steps (Appendices A-B)
+  have not been redone for these cases. *Status:* UNTESTED observation from this work.
+
 ## References
 
 Only sources opened by the lab are listed with locators. Items marked [abstract] or [not opened] are cited for
@@ -722,8 +747,9 @@ attribution only.
 - [DCL] F. De Ceuster, T. G.-F. Li, arXiv:2609.10173, Sec. IV C.
 - [DGC] S. Dain, M. E. Gabach Clement, "Extreme Bowen-York initial data", CQG 26, 035020 (2009), arXiv:0806.2180 v1:
   pp. 4-5 (eqs. (10)-(13), positivity, J_ADM), Sec. 2 (the mass remark and the horizon question), Lemmas 3.1-3.2
-  (p. 8), Thm 2.1 and eqs. (16), (19)-(20), (96).
-- [DGC10] S. Dain, M. E. Gabach Clement, arXiv:1001.0178 (CQG 27, 075003), Lemma A.1, eqs. (78)-(79), (82)-(89).
+  (p. 8), Thm 2.1 and eqs. (16), (19)-(20), (96), Sec. 6 (Final comments).
+- [DGC10] S. Dain, M. E. Gabach Clement, arXiv:1001.0178 (CQG 27, 075003), Lemma A.1, eqs. (78)-(79), (82)-(89), Sec. 4
+  (Final Comments).
 - [DLT] S. Dain, C. O. Lousto, R. Takahashi, arXiv:gr-qc/0201062, eq. (5).
 - [DLZ] S. Dain, C. O. Lousto, Y. Zlochower, arXiv:0803.0351 (PRD 78, 024039), Sec. II B, Sec. III.
 - [DR] S. Dain, M. Reiris, arXiv:1102.5215 (PRL 107, 051101), abstract and eq. (10).
@@ -731,7 +757,7 @@ attribution only.
   Lemma 4.1 (eqs. (56), (59), (64)), Lemma 4.2 (eqs. (65)-(72)), Lemma 4.3, Sec. 5.
 - [GJ] K. Goldstein, V. Jejjala, arXiv:2609.21797 v2, abstract and p. 1-2.
 - [GNPP] R. J. Gleiser, C. O. Nicasio, R. H. Price, J. Pullin, arXiv:gr-qc/9710096, eqs. (16)-(17), (19).
-- [HHO] M. Hannam, S. Husa, N. Ó Murchadha, arXiv:0908.1063 v4 (PRD 81, 064020), eq. (22), Sec. VI, eqs. (25)-(26),
+- [HHO] M. Hannam, S. Husa, N. Ó Murchadha, arXiv:0908.1063 v4 (PRD 81, 064020), eqs. (20), (22), Sec. VI, eqs. (25)-(26),
   Fig. 8.
 - [JRD] J. L. Jaramillo, M. Reiris, S. Dain, arXiv:1106.3743, abstract.
 - [KMPS] N. Korevaar, R. Mazzeo, F. Pacard, R. Schoen, Invent. Math. 135 (1999) 233-272, doi:10.1007/s002220050285,
