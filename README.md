@@ -186,6 +186,7 @@ v1.0.1: adds Open doors and figures; corrections dated 2026-11-17; no change to 
 
 ## Related projects
 
+- [certified-page-time](https://github.com/Hashirama1337s/certified-page-time): certified Page evaporation constants (entropy ratio and Page time) of a Schwarzschild black hole emitting photons and gravitons
 - [certified-evans-coleman](https://github.com/Hashirama1337s/certified-evans-coleman): a certified Evans-Coleman critical solution of radiation collapse, with exactly one growing spherical mode
 - [certified-kummer-k3](https://github.com/Hashirama1337s/certified-kummer-k3): a certified closeness bound for a Kummer K3 surface
 - [certified-chen-lebrun-weber](https://github.com/Hashirama1337s/certified-chen-lebrun-weber): a certified approximation of the Chen-LeBrun-Weber Einstein metric
